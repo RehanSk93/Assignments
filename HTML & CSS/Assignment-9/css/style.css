@@ -1,0 +1,723 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* common class --------------------------------------------- */
+.section-title{
+    padding-top: 6rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    max-width: 700px;
+    margin: 0px auto;
+}
+.section-title h2{
+    color: #000000;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.section-title p{
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+}
+.active-link{
+    border-bottom: 2px solid #27e1ce;
+}
+
+
+
+/* Nav bar section ------------------------------------------- */
+.custom-nav-list li a{
+    color: #4C4C4C;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+}
+.custom-nav-list li a:hover{
+    color: #27e1ce;
+    border-bottom: 2px solid #27e1ce;
+}
+
+.custom-nav-btn{
+    border-radius: 20px;
+    color: #27e1ce;
+    border: 2px solid #27e1ce;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 18px;
+}
+.custom-nav-btn:hover{
+    background: #27e1ce;
+    color: #ffffff;
+    border: 2px solid #27e1ce;
+}
+.navbar-brand{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar-brand:hover{
+    color: #000000;
+}
+
+
+/* banner section -------------------------------------------------- */
+.banner{
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-text h2{
+    font-size: 70px;
+    color: #ffffff;
+    line-height: 77px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.banner-text a{
+    margin-top: 25px;
+    font-size: 24px;
+    color: #ffffff;
+    background: #27e1ce;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    border: 1px solid #27e1ce;
+}
+.banner-text a:hover{
+    background: #27e1ce;
+    border: 1px solid #27e1ce;
+    color: #ffffff;
+}
+
+
+
+/* Features section ------------------------------------------- */
+.features{
+    padding-bottom: 4rem;
+}
+.features-body{
+    display: flex;
+}
+.features-body i{
+    font-size: 40px;
+    color: #27e1ce;
+    padding: 0 20px 20px;
+}
+.features-text h3{
+    color: #000000;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.features-text p{
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: Raleway, Arial, sans-serif;
+}
+
+
+
+/* Latest Projects ----------------------------------------------- */
+.Latest-project{
+    background: #F7F7F7;
+    padding-bottom: 7rem;
+
+}
+.card-body{
+    padding: 40px;
+}
+.card-body h3{
+    color: #000000;
+    font-size: 20px;
+    line-height: 42px;
+    font-weight: 700;
+}
+.card-body h5{
+    color: #000000;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    opacity: 0.5;
+    font-family: Raleway, Arial, sans-serif;
+}
+.card img{
+    height: 300px;
+}
+.card{
+    transition: 0.7s;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.project-btn a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    border-radius: 20px;
+    background: #27e1ce;
+    border: 1px solid #27e1ce;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.project-btn a i{
+    display: none;
+    transition: all 0.5s ease;
+}
+.project-btn a:hover i{
+    display: inline-block;
+}
+.project-btn a:hover{
+    background: #27e1ce;
+    border: 1px solid #27e1ce;
+}
+
+
+/* testimony section ------------------------------- */
+.testimony{
+    padding-bottom: 9rem;
+}
+.item{
+    max-width: 850px;
+    margin: 0px auto;
+    overflow: hidden;
+
+}
+.image-content{
+    height: 130px;
+    width: 130px;
+}
+.testimony-content p{
+    margin-top: 20px;
+    color: #1a1a1a;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400px;
+}
+.testimony-content span{
+    margin-top: 20px;
+    color: #7f7f7f;
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 400;
+}
+.testimony-content span a{
+    color: #27e1ce;
+}
+
+
+
+/* Blog section ------------------------------------------------------- */
+.blog{
+    background: #F7F7F7;
+    padding-bottom: 7rem;
+}
+.blog-img{
+    height: 400px !important;
+}
+.card-body-text{
+    padding: 40px;
+}
+.card-body-text h3{
+    color: #000000;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.card-body-text span{
+    color: #000000;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.card-body-text p{
+    color: #080808;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: 1.5em;
+    font-family: Raleway, Arial, sans-serif;
+    opacity: 0.5;
+}
+
+
+
+
+/* pricing section ---------------------------------------- */
+.pricing{
+    padding-bottom: 7rem;
+    background: #FCFCFC;
+}
+.price-content{
+    min-height: 300px;
+    width: 100%;
+    box-shadow: 1px 1px 1.5px 0.2px rgba(0, 0, 0, 0.151);
+    transition: 0.3s;
+}
+.price-content:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.price-title h2{
+    padding-top: 2.5rem;
+    color: #888f94;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.price-list{
+    margin-top: 4rem;
+}
+.price-list p{
+    color: #6d6d6d;
+    font-size: 72px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.price-list small{
+    display: block;
+    color: #888f94;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.price-list-highlight p{
+    color: #28E1CE;
+    font-size: 72px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.currency{
+    color: #6d6d6d;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    top: -40px;
+    left: -10px;
+}
+.price-body{
+    padding: 10px;
+    text-align: center;
+}
+.price-body p{
+    color: #7f7f7f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.price-btn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #5CC0DE;
+    color: #ffffff;
+    border: 0px;
+}
+.price-btn:hover{
+    background: #5CC0DE;
+}
+
+        /* highlight section */
+
+.price-list-highlight{
+    margin-top: 2.1rem;
+}
+.price-list-highlight small{
+    display: block;
+    color: #28E1CE;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.currency-2{
+    color: #28E1CE;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    top: -40px;
+    left: -10px;
+}
+.price-title-highlight h2{
+    padding-top: 2.5rem;
+    color: #888f94;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.price-title-highlight span{
+    color: #d5d8db;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.price-btn-2{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #28E1CE;
+    color: #ffffff;
+    border: 0px;
+}
+.price-btn-2:hover{
+    background: #28E1CE;
+}
+
+
+/* overlay section --------------------------------------------------- */
+.overlay{
+    background: url('../images/slide_2.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 7em 0;
+}
+.overlay-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.overlay-content h3{
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.overlay-btn{
+    border: 1px solid #27E0CD;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.overlay-btn:hover{
+    background: #27E0CD;
+    color: #ffffff;
+}
+.overlay-content i{
+    display: none;
+    transition: 0.5s;
+}
+.overlay-btn:hover i{
+    display: inline-block;
+}
+.overlay-btn:focus{
+    box-shadow: 0px;
+}
+
+
+/* Footer section ------------------------------------------------- */
+.footer-body{
+    background: #262626;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+.footer-title h3{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-content p{
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    font-family: Raleway, Arial, sans-serif;
+    margin-top: 25px;
+}
+.footer-content i{
+    display: none;
+    transition: 0.5s;
+}
+.footer-service-list ul{
+    float: left;
+    padding-left: 0px;
+}
+.footer-service-list ul li a{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.left-padding{
+    margin-left: 5rem;
+}
+.social-link ul{
+    padding-left: 0;
+    margin-top: 20px;
+}
+.social-link ul li {
+    line-height: 45px;
+}
+.social-link ul li a i{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.social-link ul li a i:hover{
+    opacity: 1;
+}
+hr{
+    margin: 3rem 0;
+    background: #ffffff;
+    opacity: 0.3;
+}
+.copyright p{
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.copyright a{
+    color: rgb(40, 225, 206);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*  Work section Start ------------------------------ */
+.work-banner{
+    background: url('../images/slide_3.jpg') no-repeat center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.slider-text-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.slider-text-inner h2{
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 77px;
+}
+.slider-text-inner p{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.slider-text-inner i{
+    color: #D8534F;
+}
+.slider-text-inner a{
+    color: #27E0CD;
+}
+
+.work-overlay{
+    background: url('../images/slide_1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 7em 0;
+}
+
+
+
+
+/* service-banner start ------------------------------------ */
+.service-banner{
+    background: url('../images/slide_2.jpg') no-repeat center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.pleasure{
+    padding-bottom: 7rem;
+}
+.pleasure-body h3{
+    color: #000000;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.pleasure-body p{
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.pleasure-body a{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #27e1ce;
+    color: #27e1ce;
+    transition: 0.3s;
+}
+.pleasure-body a:hover{
+    background: #27e1ce;
+    color: #ffffff;
+    border: 2px solid #27e1ce;
+}
+
+.pleasure-body i{
+    display: none;
+}
+.pleasure-body a:hover i{
+    display: inline;
+}
+.service-overlay{
+    background: url('../images/slide_1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 7em 0;
+}
+
+
+
+/* pricing.html page start ------------------------------ */
+.pricing-banner{
+    background: url('../images/slide_1.jpg') no-repeat center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.pricing-featured{
+    background: #F7F7F7;
+}
+.pricing-overlay{
+    background: url('../images/slide_1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 7em 0;
+}
+
+
+
+
+/* Contact us page start ----------------------------------- */
+.contact-banner{
+    background: url('../images/slide_2.jpg') no-repeat center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contact-section{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.contact-title h2{
+    color: #000000;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+.contact-title p{
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: Raleway, Arial, sans-serif;
+    opacity: 0.8;
+}
+.contact-info h3{
+    color: #000000;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+.contact-info-list{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 40px;
+}
+.contact-info-list li{
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 50px;
+    font-family: Raleway, Arial, sans-serif;
+}
+.contact-info-list i{
+    font-size: 22px;
+    color: #27e1ce;
+    padding-right: 20px;
+}
+.contact-info-list a{
+    color: #27e1ce;
+}
+.custom-form{
+    border: 2px solid #E5E5E5;
+    padding: 25px;
+}
+.custom-form::placeholder{
+    color: #bbbabad5;
+}
+.contact-form-btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #28E1CE;
+    border: 1px solid #28E1CE;
+}
+.contact-form-btn:hover{
+    background: #28E1CE;
+    border: 1px solid #28E1CE;
+}
+
+/* map section -------------------------------------------- */
+.map iframe{
+    width: 100%;
+    height: 450px;
+    padding: 0;
+}

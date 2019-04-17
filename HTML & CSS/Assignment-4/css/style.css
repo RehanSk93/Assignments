@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    background: #fff;
+}
+
+
+/* Navigation Bar Section...................................... */
+.dropdown:hover > .dropdown-menu{
+    display: block;
+    margin-top: 15px;
+}
+.custom-nav-item{
+    padding-right: 1rem;
+}
+.nav-link{
+    color: #33a3bd !important;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.active{
+    color: black !important;
+}
+.move-to-top{
+    background: #7F7F7F;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    z-index: 1000;
+    display: none;
+    opacity: 0.7;
+}
+.move-to-top i{
+    font-size: 18px;
+    line-height: 45px;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+
+/* Header Section...................................... */
+.header-content{
+    background: linear-gradient(to right, #3DCDBC, #33A3BD);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 20%;
+}
+.header-left{
+    padding-top: 55%;
+}
+.header-right{
+    padding-top: 40%;
+}
+header h1{
+    color: #fff;
+    font-size: 59px;
+    line-height: 1.2 !important;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+header p{
+    color: white;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.header-right a{
+    padding: 20px 30px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #34a7bd !important;
+}
+.header-right a:hover{
+    background: white;
+}
+
+
+.social-client{
+    padding: 2em 0em;
+    background-color: #F6F6F6;
+}
+
+
+
+
+/* Service section ------------------------------------- */
+.services-text{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    width: 70%;
+    margin: 0 auto 6rem;
+    
+}
+.services-text h2{
+    color: #4d4d4d;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+}
+.services-text p{
+    color: #898989;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.services-btn{
+    background-color: #00FFA3;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #00FFA3;
+    padding: 22px 35px;
+    color: #239c71;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.service-card{
+    padding-top: 4em;
+}
+.custom-card-title{
+    color: #000000;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.custom-card-title i{
+    color: #17B794;
+    font-size: 22px;
+}
+.custom-card-text{
+    color: #898989;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.design{
+    margin-top: 6em;
+}
+
+/* Popular-Products section --------------------------------------- */
+.Popular-Products-top .card{
+    cursor: pointer;
+}
+.Popular-Products-title{
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    margin: 0px auto;
+    width: 70%;
+}
+.Popular-Products-title h2{
+    color: #4d4d4d;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+}
+.Popular-Products-title p{
+    color: #898989;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.Popular-Products-top{
+    margin-top: 5em;
+}
+.team-content{
+    color: #777777;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+
+}
+
+
+
+
+.card-custom-1{
+    height: 240px;
+    width: inherit;
+    background-color: #E3AA7E;
+    border-radius: 0px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: linear-gradient(to right, #3DCDBC, #33A3BD);
+}
+.overlay:hover{
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.card-text{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+.card-text > div {
+    margin: 20px;
+    line-height: 10px;
+}
+.card-text h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+.card-text p{
+    font-size: 14px;
+    color: white;
+    line-height: 23px;
+
+}
+.card-custom-2{
+    height: 240px;
+    background-color: #ACA3A6;
+    border-radius: 0px;
+}
+.card-custom-3{
+    height: 508px;
+    background-color: #E1DDDA;
+    border-radius: 0px;
+}
+.card-custom-4{
+    height: 240px;
+    background-color: #BFEEB8;
+    border-radius: 0px;
+}
+.card-custom-5{
+    height: 240px;
+    background-color: #8BA285;
+    border-radius: 0px;
+}
+
+.Gettemplate{
+    padding: 4em 0em
+}
+.Gettemplates-btn{
+    background-color: #00FFA3;
+    border-radius: 0px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 35px;
+    color: #239c71;
+}
+
+
+
+
+/* testimonial section -------------------------------- */
+.testimonial{
+    background-color: #F6F6F6;
+    padding: 5em 0em;
+}
+.testimonial-text{
+    width: 70%;
+    margin: 0px auto;
+    padding-bottom: 3rem;
+}
+.testimonial-text h2{
+    color: #4d4d4d;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+}
+.testimonial-text p{
+    color: #898989;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.author-text{
+    font-size: 13px;
+    font-weight: 600;
+    color: #676767;
+}
+.media-body p{
+    color: #777777;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 400;
+    font-style: italic;
+}
+.author-text{
+    color: #666666;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+}
+
+
+
+
+/* Footer section -------------------------------------------- */
+.contact{
+    background-color: #262626;
+    padding-top: 6rem;
+}
+.contact-text h3{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.custom-button{
+    border: 2px solid white;
+    border-radius: 0px;
+    padding: 15px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.custom-button:hover{
+    background-color: white;
+    color: black;
+}
+.contact-area{
+    padding: 5em 0em;
+}
+.contact-area h3{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+}
+.contact-area ul{
+    list-style-type: none;
+}
+.contact-area ul li{
+    line-height: 30px;
+}
+.contact-area ul li a{
+    color: #17B794;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.contact-area ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+.contact-info p a{
+    color: #17B794;
+}
+.contact-info p a:hover{
+    color: white;
+    text-decoration: none;
+}
+.custom-footer-form{
+    height: 60px;
+    padding-left: 20px;
+}
+.custom-footer-form::placeholder{
+    color: #555555;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: Raleway, Arial, sans-serif;
+    opacity: 0.5;
+}
+.custom-footer-form:focus{
+    box-shadow: none;
+}
+.custom-contact-btn{
+    background-color: #17B794;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    height: 60px;
+    letter-spacing: 1px
+}
+.custom-contact-btn:hover{
+    background-color: #17B794;
+}
+
+.footer-area{
+    background-color: #1A1A1A;
+    padding: 2em 0em 1em;
+}
+footer p{
+    font-size: 16px;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 400;
+}
+footer p a{
+    color: #17B794;
+}
+footer p a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* About Us Page........................................................ */
+#section-1{
+    background: linear-gradient(to right, #3DCDBC, #33A3BD);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.section-position{
+    width: 60%;
+}
+.section-position h2{
+    font-size: 59px;
+    color: #fff;
+    font-weight: 100;
+}
+.section-position p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+}
+
+
+
+/* Our team..................................... */
+.our-team{
+    padding-bottom: 6rem;
+}
+.our-team-padding{
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    width: 60%;
+    margin: 0px auto;
+}
+.our-team-padding h2{
+    color: #4d4d4d;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 300;
+}
+.our-team-padding p{
+    color: #898989;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: 400;
+}
+.team-body h2{
+    color: #000000;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.team-position{
+    color: #bfbfbf;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.container-padding{
+    padding-bottom: 60px;
+}
+
+.carousel-control-prev i{
+    font-size: 25px;
+    color: #cccccc;
+}
+.carousel-control-next i{
+    font-size: 25px;
+    color: #cccccc;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+.social-icon{
+    padding: 0;
+    margin: 0;
+}
+.social-icon li{
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+.social-icon li a i{
+    font-size: 20px;
+    color: #17b794;
+}
+.social-icon li a{
+    font-size: 20px;
+    color: #17b794;
+}
+
+/* portfolio Page........................................... */
+.portfolio-text h2{
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #41C3A7;
+}
+.portfolio-text p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #bfbfbf;
+}
+
+/* Contact us page........................ */
+.contact-form{
+    color: #777777;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+}
+.contact-form-control{
+    border: 2px solid #777;
+    opacity: 0.3;
+}
+.contact-details{
+   padding: 20px;
+   padding-left: 12%;
+}
+.contact-details h3{
+    color: black;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.contact-details p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #777777;
+}
+.contact-details ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-details ul li {
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.contact-details ul li a{
+    color: #17b794;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.contact-details ul li i{
+    margin-right: 20px;
+    font-size: 20px;
+    color: #777777;
+    opacity: 0.3;
+}
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
+/* Responsive Web Design-------------------------------- */
+@media only screen and (max-width: 600px) {
+    .header-left{
+        padding-top: 30%;
+    }
+    .header-right{
+        padding-top: 20%;
+    }
+    .header-right h1{
+        font-size: 34px;
+        text-align: center;
+    }
+    .header-right p{
+        color: #d3f1ed;
+        font-size: 20px;
+        text-align: center;
+    }
+    .header-right a{
+        width: 100%;
+    }
+    .services-text{
+        width: 100%;
+        padding: 20px;
+        margin-top: 2.3rem;
+        margin-bottom: 6rem;
+    }
+    .design{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .Popular-Products-title{
+        padding: 80px 10px 20px;
+        width: 100%;
+    }
+    .Popular-Products-top{
+        margin-top: 1rem;
+    }
+    .card-custom-3{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .testimonial {
+        padding-top: 2rem;
+    }
+    .testimonial-text{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .media{
+        margin-top: 2rem;
+    }
+    .contact{
+        padding-top: 3rem;
+    }
+    .custom-contact-btn{
+        margin-top: -17px;
+    }
+    .gtco-list-link{
+        padding-left: 0;
+    }
+    .custom-footer-form{
+        width: 100%;
+    }
+    .our-team-padding{
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        width: 100%;
+    }
+
+
+    /* About us page ------------------- */
+    .section-position{
+        width: 100%;
+        text-align: center;
+    }
+    .section-position h2{
+        font-size: 34px;
+    }
+    .section-position p{
+        font-size: 20px;
+    }
+    .service-card{
+        padding-top: 2em;
+    }
+
+
+    /* service page --------------------- */
+    .service-card-container{
+        margin-bottom: 20px;    
+    }
+
+
+    /* portfolio page.............. */
+    .our-team{
+        padding: 15px;
+    }
+    .our-team-padding h2{
+        font-size: 35px;
+    }
+    .our-team-padding p{
+        font-size: 18px;
+    }
+    .our-team-padding{
+        padding-bottom: 2rem;
+    }
+
+
+    /* Contact page -------------------------------- */
+    .contact-details{
+        margin-top: 2rem;
+        padding-left: 0%;
+    }
+  }

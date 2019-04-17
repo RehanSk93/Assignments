@@ -1,0 +1,337 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: Hind, sans-serif;
+}
+
+.padding-top-bottom{
+    padding-top: 5rem;
+    padding-bottom: 5rem
+}
+.title-section h2{
+    color: #515769;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: right;
+    font-family: Hind, sans-serif;
+}
+.title-section p{
+    color: #a6a7aa;
+    font-family: Hind, sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: right;
+}
+
+/* Navigation section ------------------------------------------------ */
+.custom-nav{
+    border-bottom: 1px solid #B1B8BD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.custom-nav-link{
+    color: #ffffff;
+    font-family: Hind, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 1.5rem !important;
+}
+
+/* Scroll function */
+nav.blackBar{
+    background: #FFFFFF;
+    transition: 0.5s ease;
+}
+nav.blackBar .custom-nav-link{
+    color: #515769;
+}
+.dark-img{
+    display: none;
+}
+
+nav .nav-item{
+    position: relative;
+}
+nav .custom-nav-link:after {
+    content: '';
+    width: 8px;
+    height: 3px;
+    background: #17BED2;
+    position: absolute;
+    top: 18px;
+    left: -5px;
+    opacity: 0;
+}
+
+nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
+    opacity: 1;
+}
+
+
+
+
+/* Banner section ------------------------------------ */
+.banner{
+    background: url('../img/1920x1080/01.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+}
+.banner-text{
+    margin-top: 22%;
+    z-index: 11;
+}
+.banner-text h1{
+    color: #ffffff;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+}
+.banner-text p{
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+}
+.banner-line{
+    margin-top: 2.5rem;
+    height: 0.5px;
+    width: 50%;
+    background: #C8C8CB;
+}
+.banner-social-icon{
+    margin-top: 2rem;
+}
+.banner-social-icon ul{
+    list-style-type: none;
+}
+.banner-social-icon ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+.banner-social-icon ul li i{
+    color: #E3E6E8;
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-social-icon ul li:hover{
+    background: #ffffff;
+}
+.banner-social-icon ul li:hover i{
+    color: #515769;
+}
+
+
+
+
+
+/* Intro section ----------------------------------------- */
+.intro-content p{
+    color: #a6a7aa;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+.intro-progress-bar{
+    margin-top: 3rem;
+}
+.intro-progress-bar span{
+    float: right;
+}
+.item-1{
+    margin-top: 1rem;
+}
+.intro-progress-bar p{
+    color: #515769;
+    font-family: Hind, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.progress-bar{
+    background: #14A2B3;
+}
+
+
+
+/* experience section ----------------------------------------- */
+.experience{
+    background: #FAFAFA;
+}
+.exp-container, .exp-container-middle{
+    background: #ffffff;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.exp-container-middle{
+    background: #17BED2;
+}
+.exp-icon i{
+    color: #999caa;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    transition: 0.3s ease;
+}
+.exp-body, .exp-body-middle{
+    position: relative;
+    top: 0;
+    transition: 0.5s ease;
+}
+.exp-body h3{
+    color: #515769;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.exp-body p{
+    color: #a6a7aa;
+    font-size: 15px;
+    font-weight: 400;
+}
+.exp-icon-middle i{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 1.5rem;
+    transition: 0.3s ease;
+}
+.exp-body-middle h3{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.exp-body-middle p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+.exp-container:hover .exp-icon i{
+    opacity: 0;
+}
+.exp-container:hover .exp-body{
+    top: -30px;
+}
+.exp-container-middle:hover .exp-icon-middle i{
+    opacity: 0;
+}
+.exp-container-middle:hover .exp-body-middle{
+    top: -30px;
+}
+
+
+/* work section -------------------------------------- */
+.work-img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.work-img img{
+    width: 100%;
+    height: 210px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.work-img:hover .overlay{
+    opacity: 0.5;
+}
+
+
+/* Model section style ---------------------------- */
+
+.model-title-section h4{
+    color: #515769;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Hind, sans-serif;
+    padding-bottom: 0px;
+}
+.model-title-section span{
+    color: #bfc1c7;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.model-body-section{
+    border-right: 1px solid #999caa;
+}
+.model-body-section p{
+    color: #a6a7aa;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.details p{
+    color: #a6a7aa;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+
+
+
+/* contact-details --------------------------------------------- */
+.contacts{
+    background: #FAFAFA;
+}
+.contact-details h5{
+    color: #515769;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Hind, sans-serif;
+}
+.contact-details a{
+    color: #999caa;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer-content p a{
+    color: #999caa;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+}
+.footer-content p{
+    color: #a6a7aa;
+    font-size: 15px;
+    font-weight: 400;
+}
+

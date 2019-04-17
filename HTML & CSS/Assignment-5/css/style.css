@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Navigation Bar............................... */
+.custom-nav{
+    background: #ffffff;
+}
+.custom-brand{
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #2c2c2c;
+    opacity: 0.8;
+}
+.custom-brand:hover{
+    color: #2c2c2c;
+}
+.custom-nav-link li{
+    padding-right: 2rem;
+}
+.custom-nav-link li a{
+    color: #304352;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+}
+.custom-nav-link li a.active{
+    border-bottom: 2px solid #2c2c2c;
+}
+.navbar-toggler-icon i{
+    margin-top: 8px;
+}
+.move-to-top{
+    background: #f3f3f3;
+    box-shadow: 4px 10px 14px 1px rgba(0, 0, 0, 0.377);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    z-index: 1000;
+    display: none;
+    opacity: 0.7;
+}
+.move-to-top i{
+    font-size: 18px;
+    line-height: 50px;
+    color: #000000;
+}
+
+/* Zoom Slider section Start......................... */
+#demo-1{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 720px;
+    background-color: #999;
+}
+.slider-text{
+    position: relative;
+    z-index: 2; 
+    margin: 250px auto;
+    padding: 10px;
+    max-width: 900px;
+    color: #fff;
+    text-align: center;
+}
+.slider-text h1{
+    font-size: 32px;
+    letter-spacing: 12px;
+    font-weight: 300;
+    text-transform: uppercase; 
+}
+.slider-text p{
+    color: #f9f9f9;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.slider-text a:nth-child(1){
+    color: #E24C65;
+    text-decoration: none;
+}
+.custom-slider-btn{
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    background-color: #E24C65;
+    border: 0px;
+    transition: 0.5s;
+}
+.custom-slider-btn:hover{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.377);
+    border: 0px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: #304352;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* Zoom Slider section Start......................... */
+
+
+
+
+/* About Section start............................... */
+.about{
+    background-color: #F0F0F0;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.about-thumb{
+    padding: 100px;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+}
+.about-thumb h1{
+    color: #333333;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 12px;
+    font-weight: 300;
+    text-transform: uppercase;  
+}
+.about-thumb p{
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+.inner-img{
+    position: relative;
+    top: 50px;
+    left: -160px;
+}
+.inner-img img{
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid white;
+}
+
+
+/* Snapshot section Start................................ */
+.Snapshot{
+    padding: 0;
+    margin: 0;
+    background-color: #F0F0F0;
+    padding-bottom: 110px;
+}
+.snapshot-text h1{
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: 200;
+}
+.snapshot-text p{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+/* carousel Concept Start ....................................... */
+.card{
+    height: 400px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+    margin-top: 45px;
+}
+.team-img img{
+    margin-top: 40px;
+    width: 220px;
+    height: 220px;
+    transition: all 0.4s ease;
+    transform: translateY(0px);
+}
+.card:hover{
+    background-color: #485966;
+}
+.card:hover .team-img img{
+    transform: translateY(-40px);
+}
+.team-text{
+    margin: 35px auto;
+}
+.team-text h2{
+    color: #e44c65;
+    font-size: 19px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s ease-in;
+}
+.team-text p{
+    visibility: hidden;
+    color: #fff;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition: 0.5s ease-in;
+    transform: scaleX(0);
+}
+.card:hover .team-text h2{
+    transform: translateY(-30px);
+}
+.card:hover .team-text P{
+    visibility: visible;
+    transform: scaleX(1)
+}
+.owl-theme .owl-dots .owl-dot span{
+    height: 8px;
+    width: 20px;
+    border-radius: 0px;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 3rem;
+}
+
+/* Gallery Section....................................... */
+.gallery{
+    padding: 110px;
+}
+.gallery-section-title{
+    text-align: center;
+    color: #333333;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.gallery-section-title h1{
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.gallery-section-title p{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+.gallery-section-title span{
+    display: block;
+}
+.gallery-img{
+    overflow: hidden;
+}
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.gallery-container{
+    perspective: 1000px; 
+    margin-bottom: 30px;
+}
+.gallery-main-content{
+    transform-style: preserve-3d;
+}
+.gallery-main-content:hover .gallery-img img{
+    transform: translateX(90px);
+}
+.gallery-info{
+    height: 100%;
+    width: 50%;
+    padding: 50px 20px;
+    background-color: #304352;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    transform-origin: left;
+    display: block;
+    transform: rotateY(-90deg);
+    opacity: 0;
+    visibility: hidden;
+}
+.gallery-info h2{
+    color: #fff;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+}
+.gallery-info p{
+    color: #ed4e6e;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+}
+.read-btn{
+    float: right;
+    opacity: 0.8;
+    margin-top: 110px;
+}
+.gallery-main-content:hover .gallery-info{
+   opacity: 1;
+   visibility: visible;
+   transform: rotateY(0deg);
+}
+
+
+
+/* Contact us section.................................. */
+.contact{
+    background-color: #304352;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+.contact-hading h1{
+    color: #fff;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.contact-hading p{
+    color: #f9f9f9;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    line-height: 43px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.contact-hading span{
+    display: block;
+}
+.contact-row{
+    margin-top: 5rem;
+    padding: 0 4rem;
+}
+.form-control{
+    background-color: transparent;
+    padding: 30px 10px;
+    border-radius: 4px;
+}
+.form-control::placeholder{
+    color: #f3f3f3;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 100;
+    opacity: 0.5;
+}
+textarea{
+    padding-top: 20px;
+}
+.custom-btn{
+    font-size: 18px;
+    font-weight: 400;
+    width: 450px;
+    height: 60px;
+    text-transform: uppercase;
+    background-color: #E34C65;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-bottom: 8rem;
+}
+.custom-btn:hover{
+    background-color: black;
+    border: 0px;
+}
+.form-control:focus{
+    background-color: transparent;
+    border: 1px solid #ed4e6e !important;
+    box-shadow: none;
+}
+
+
+
+/* social icon....................................... */
+.social-icons ul{
+    list-style: none;
+}
+.social-icons ul li{
+    display: inline-block;
+}
+.social-icons i{
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px 10px 22px 10px;
+    transition: 0.5s ease;
+    
+}
+.social-icons i:hover{
+    background: #f3f3f3;
+    color: #E24C65;
+}
+.footer p{
+    color: #f9f9f9;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.footer a{
+    text-decoration: none;
+    color: #ed4e6e;
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 576px) {
+    .custom-nav-link li a.active {
+        border-bottom: 0px;
+    }
+    .custom-nav-link li a{
+        text-align: left;
+        padding-top: 1rem;
+    }
+    .custom-nav-link li:hover a{
+        color: #E24C65;
+    }
+    .slider-text {
+        margin: 130px auto;
+    }
+    .slider-text h1{
+        font-size: 1.6rem;
+        line-height: 3rem;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    .about{
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    .about-thumb {
+        padding: 30px;
+        border-radius: 6px;
+    }
+    .about-thumb h1{
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 8px;
+    }
+    .about-thumb p {
+        font-size: 17px;
+        line-height: 29px;
+    }
+    .inner-img{
+        padding-top: 3rem;
+        top: 0px;
+        left: 0;
+    }
+    .snapshot-text h1{
+        font-size: 25px;
+        line-height: 50px;
+        letter-spacing: 10px;
+    }
+    .snapshot-text p{
+        font-size: 14px;
+    }
+    .Snapshot-container{
+        padding: 10px;
+    }
+    .team-text p{
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .Snapshot{
+        padding-bottom: 2rem;
+    }
+    .gallery{
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    .gallery-section-title p{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    .gallery-container{
+        margin-bottom: 10px;
+    }
+    .gallery-info{
+        padding: 10px;
+        text-align: left;
+    }
+    .gallery-info h2{
+        margin-top: 20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 18px;
+    }
+    .read-btn{
+        display: none;
+    }
+    .contact{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .contact-hading h1{
+        font-size: 26px;
+        line-height: 42px;
+    }
+    .contact-hading p{
+        margin-top: 25px;
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 100;
+        line-height: 40px;
+    }
+    .contact-row{
+        margin-top: 2rem;
+        padding: 0px
+    }
+    .custom-btn{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .social-icons ul{
+        padding-left: 0px;
+    }
+  }

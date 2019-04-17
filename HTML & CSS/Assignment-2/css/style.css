@@ -1,0 +1,609 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+/* Navbar customization Start.............................. */
+.navbar-brand{
+    color: black;
+    text-shadow: 1px 1px white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #232b2b;
+    transition: 0.5s; 
+}
+.active{
+    color: #E3AE57;
+}
+.nav-link:hover{
+    color: #E3AE57;
+}
+.sticky{
+    background-color: white;
+    transition: all 0.5s ease;
+}
+.navbar-toggler-icon {
+    line-height: 50px;
+    color: #E3AE57;
+    font-size: 30px;
+    font-weight: 300;
+}
+/* Navbar customization End.............................. */
+
+
+/* Home Section Start.................................... */
+.home-banner{
+    background: url('../images/home-img.jpg') no-repeat center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+
+
+
+
+
+
+.home-img{
+    background-image: url("../images/home-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;    
+}
+.header-text{
+    background-color: #F1E2D7;
+    height: 100%;
+}
+.header-text h4{
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    word-spacing: 2px;
+    font-weight: 300;
+}
+.header-text h1{
+    padding-bottom: 5px;
+    word-spacing: 2px;
+    font-weight: 300;
+    font-size: 42px;
+}
+.header-text p{
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding-bottom: 5px;
+    word-spacing: 2px;
+    font-weight: 300;
+}
+.header-text strong{
+    color: #232B2B;
+    font-weight: 500;
+}
+.header-text a{
+    border: 3px solid black;
+    border-radius: 100px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 12px 36px;
+    text-transform: uppercase;
+    margin-top: 42px;
+}
+.header-text a:hover{
+    background-color: #E3AE57;
+    color: white;
+    border: 3px solid #E3AE57;
+    transition: all 0.3s ease;
+}
+/* Home Section End.................................... */
+
+
+
+/* About Section Start.................................... */
+.about-section{
+    padding: 45px;
+}
+.about-section h1{
+    font-weight: 300;
+}
+.image-position{
+    width: 100%;
+    height: 100px;
+}
+.about-img{
+    background: url('../images/about-img.jpg') no-repeat center center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    
+}
+.mySkill{
+    background-color: #E3AE57;
+}
+.mySkill h1{
+    padding-top: 35px;
+    padding-left: 30px;
+    color: white;
+}
+.mySkill p{
+    padding-top: 5px;
+    padding-left: 30px;
+    color: white;
+    margin-bottom: 0px;
+}
+.frontend p{
+    font-weight: bold;
+    color: black;
+    padding-bottom: 8px;
+    display: inline;
+}
+.frontend span{
+    float: right;
+    margin-right: 34px;
+    color: white;
+    font-weight: bold;
+}
+.progress-width{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 3px;
+    background-color: white;
+}
+.bar-clr{
+    background-color: black;
+}
+/* About Section Start.................................... */
+
+
+/* Service Section Start.................................... */
+.service-1{
+    background-color: #E3AE57;
+}
+.service-2{
+    background-color: #E9724C;
+}
+.service-3{
+    background-color: #161616;
+}
+.service-4{
+    background-color: #FFFFFF;
+}
+.service-position{
+    padding: 52px 22px 52px 22px;
+    text-align: center;
+    color: white;
+}
+.service-position i{
+    font-size: 40px;
+    padding: 20px 0px 45px 0px;
+}
+.service-position h3{
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-weight: 300;
+}
+.service-position p{
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+}
+.service-position-last{
+    padding: 52px 22px 52px 22px;
+    text-align: center;
+    color: #888;
+}
+.service-position-last i{
+    font-size: 40px;
+    padding: 20px 0px 45px 0px;
+    color: black
+}
+.service-position-last h3{
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-weight: 300;
+}
+.service-position-last p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #888;
+}
+/* Service Section Start.................................... */
+
+
+
+/* Service Section Start.................................... */
+.img-responsive{
+    width: 100%;
+    max-height: 400px;
+}
+.service-bg-color{
+    background-color: #E9724C;
+    padding: 22px 42px 42px 60px;
+}
+
+.exp-heading h1{
+    font-size: 42px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
+    font-weight: 100;
+    margin-top: 20px;
+    color: white;
+}
+.exp-heading p{
+    color: wheat;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+
+}
+.service-bg-color i{
+    color: wheat;
+    font-size: 35px;
+    padding-top: 5px;
+}
+.graphicDesigner h3{
+    padding-left: 15px;
+    color: white;
+    font-size: 26px;
+    line-height: 25px;
+    padding-bottom: 6px;
+    font-weight: 300;
+}
+.graphicDesigner small{
+    color: #633;
+    font-weight: bold;
+    font-size: 65%;
+}
+.graphicDesigner p{
+    padding-left: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+/* Service Section End.................................... */
+
+
+/* Education Section Start.................................... */
+.Education-bg-color{
+    background-color: #E3AE57;
+    padding: 22px 42px 42px 60px;
+}
+.Education-bg-color i{
+    color: wheat;
+    font-size: 35px;
+    padding-top: 5px;
+}
+/* Education Section End.................................... */
+
+
+/* quotes Section Start.................................... */
+.quotes{
+    background: black url('../images/quotes-bg.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+}
+.quotes-content{
+    z-index: 111;
+    width: 70%;
+    margin: 0px auto;
+}
+.quotes-content i{
+    z-index: 1;
+    margin-top: 10%;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 40px;
+}
+.quotes-content h2{
+    z-index: 1;
+    line-height: 52px;
+    margin-top: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+.quotes-content p{
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+/* quotes Section End.................................... */
+
+
+/* Content Section Start.................................... */
+.contentSection{
+    background-color: #E9724C;
+}
+.contentText h1{
+    padding-top: 4%;
+    color: white;
+    font-size: 42px;
+    padding-bottom: 14px;
+    font-weight: 300;
+}
+.contentText p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E3AE57;
+    border-radius: 0px;
+    box-shadow: none;
+    color: wheat;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease;
+}
+.form-control:focus{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: all 0.5s ease;
+}
+.form-control::placeholder{
+    color: white;
+}
+.customBtn{
+    background: white;
+    color: #161616;
+    border-radius: 40px;
+    padding: 10px 130px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: all 0.5s ease;
+}
+.customBtn:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.contactImg{
+    background: url('../images/contact-img.jpg') no-repeat;
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-size: cover;
+}
+.visit-office h3{
+    padding: 10%;
+    color: white;
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-weight: 300;
+    margin: 20px 0px 10px 0px;
+}
+.visit-office p{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.contact-info h3{
+    padding-left: 10%;
+    padding-top: 4%;
+    color: white;
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-weight: 300;
+    margin: 20px 0px 10px 0px;
+}
+
+.contact-info p{    
+    color: #999999;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    padding-left: 10%;
+}
+.contact-info i{
+    padding-right: 10px;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #E3AE57;
+}
+/* Content Section End.................................... */
+
+
+/* Copyright Section Start.................................... */
+.footer{
+    padding: 140px 0px;
+    background-color: white;
+}
+.footer p{
+    color: #161616;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+.social-side{
+text-align: center;
+}
+.social-side a{
+    color: #999;
+    padding: 15px 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.social-side a:hover{
+    background: #E3AE57;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+/* Copyright Section End.................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media Query Start for all devices.................................... */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .header-text{
+        padding: 7%;
+    }
+    .header-text p{
+        font-size: 20px;
+    }
+    .header-text a{
+        margin-top: 0px;
+        font-size: 18px;
+        padding: 7px 50px;
+    }
+    .tagLine{
+        font-size: 18px;
+    }
+    .image-position{
+        width: 100%;
+        height: 300px;
+    }
+    .mySkill{
+        padding: 7% 7% 15%;
+    }
+    .img-responsive {
+        width: 100%;
+        max-height: 300px;
+    }    
+    .quotes h2{
+        font-size: 26px;
+    }
+    .footer{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .quotes-content{
+        z-index: 111;
+        width: 95%;
+        margin: 0px auto;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header-text{
+        padding: 7%;
+    }
+    .header-text p{
+        font-size: 20px;
+    }
+    .header-text a{
+        margin-top: 0px;
+        font-size: 18px;
+        padding: 7px 50px;
+    }
+    .tagLine{
+        font-size: 18px;
+    }
+    .image-position{
+        width: 100%;
+        height: 300px;
+    }
+    .mySkill{
+        padding: 7% 7% 15%;
+    }
+    .img-responsive {
+        width: 100%;
+        max-height: 300px;
+    } 
+    
+}  
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header-text{
+        padding: 17% 7% 10%;
+    }
+    .header-text p{
+        font-size: 16px;
+    }
+    .header-text a{
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        padding: 12px 36px;
+        margin-top: 17px;
+    }
+    .image-position {
+        width: 100%;
+        height: 340px;
+    }
+    .mySkill {
+        padding: 20px;
+    }
+    .img-responsive {
+        width: 100%;
+        max-height: 388px;
+    }
+} 
