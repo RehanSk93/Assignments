@@ -38,9 +38,6 @@ body{
 .custom-nav-link li a.active{
     border-bottom: 2px solid #2c2c2c;
 }
-.navbar-toggler-icon i{
-    margin-top: 8px;
-}
 .move-to-top{
     background: #f3f3f3;
     box-shadow: 4px 10px 14px 1px rgba(0, 0, 0, 0.377);
@@ -63,6 +60,9 @@ body{
     color: #000000;
 }
 
+.navbar-toggler-icon i{
+    margin-top: 8px;
+}
 /* Zoom Slider section Start......................... */
 #demo-1{
     position: relative;

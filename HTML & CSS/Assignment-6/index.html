@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
     <!-- Navigation bar section......................................... -->
     <nav class="navbar navbar-expand-lg custom-nav fixed-top" id="nav_bar">
@@ -34,29 +34,29 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Intro</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Intro">Intro</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Overview</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Overview">Overview</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Speakers</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Speakers">Speakers</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Programs</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Programs">Programs</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Register</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Register">Register</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Venue</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Venue">Venue</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Sponsors</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Sponsors">Sponsors</a>
                     </li>
-                    <li class="nav-card active">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-card">
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
 
@@ -74,7 +74,7 @@
 
 
     <!-- Banner Section................................................... -->
-    <section class="banner">
+    <section class="banner" id="Intro">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -99,7 +99,7 @@
 
 
     <!-- overview section................................................. -->
-    <section class="overview">
+    <section class="overview" id="Overview">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
@@ -173,7 +173,7 @@
 
 
     <!-- speakers section................................................ -->
-    <section class="speakers">
+    <section class="speakers" id="Speakers">
         <div class="container">
             <div class="row">
                 <div class="col-ms-12 col-sm-12 wow bounceIn">
@@ -245,7 +245,7 @@
 
 
     <!-- program section.................................................. -->
-    <section class="program">
+    <section class="program" id="Programs">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
@@ -411,45 +411,43 @@
 
 
 
-    <!-- register section -->
-    <!-- this is parallax section............important area......... -->
-    <section class="register-section">
-        <div class="register" data-image-src="./images/register-bg.jpg" data-parallax="scroll" data-z-index="1">
-            <div class="container ">
-                <div class="row reg-detail">
-                    <div class="wow fadeInUp reg-col-left col-md-7 col-sm-7" data-wow-delay="0.6s">
-                        <h2>Register Here</h2>
-                        <h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet
-                            tellus iaculis hendrerit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                            tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet
-                            consectetuer diam nonummy.</p>
-                    </div>
-                    <div class="wow fadeInUp col-md-5 col-sm-5 reg-col-right" data-wow-delay="1s">
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" class="form-control reg-form" placeholder="First Name" id="email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control reg-form" placeholder="Last Name" id="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="form-control reg-form" placeholder="Phone Number"
-                                    id="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control reg-form" placeholder="Email Address" id="email">
-                            </div>
-                            <div class="button-right text-right">
-                                <button class="btn btn-lg">Register</button>
-                            </div>
-                        </form>
-                    </div>
+    
+    <!-- this is parallax section................. -->
+    <section class="register-section" id="Register">
+        <div class="container ">
+            <div class="row reg-detail">
+                <div class="wow fadeInUp reg-col-left col-md-7 col-sm-7" data-wow-delay="0.6s">
+                    <h2>Register Here</h2>
+                    <h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet
+                        tellus iaculis hendrerit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet
+                        consectetuer diam nonummy.</p>
+                </div>
+                <div class="wow fadeInUp col-md-5 col-sm-5 reg-col-right" data-wow-delay="1s">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control reg-form" placeholder="First Name" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control reg-form" placeholder="Last Name" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control reg-form" placeholder="Phone Number" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control reg-form" placeholder="Email Address" id="email">
+                        </div>
+                        <div class="button-right text-right">
+                            <button class="btn btn-lg">Register</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-
+    <!-- this is parallax section................. -->
 
 
     <!-- faq Section...................................................... -->
@@ -536,8 +534,7 @@
 
 
     <!-- vanue section.................................................. -->
-    <section class="vanue-section">
-        <div class="vanue" data-image-src="./images/venue-bg.jpg" data-parallax="scroll" data-z-index="2">
+    <section class="vanue-section" id="Venue">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.9s">
@@ -559,7 +556,7 @@
 
 
     <!-- sponsors section............................................... -->
-    <section class="sponsors">
+    <section class="sponsors" id="Sponsors">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -598,35 +595,41 @@
 
 
     <!-- contact us section.............................................. -->
-    <section class="contact-us">
-            <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="contact-details">
-                                <h3>New Event</h3>
-                                <p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
-                                <p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.</p>
-                                <a href="#" class="btn btn-danger">DOWNLOAD NOW</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 p-5 wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="contact-form">
-                                <h2>Keep in touch</h2>                      
-                                <div class="form-fild">
-                                    <form action="" method="post">
-                                        <input name="name" type="text" class="form-control custom-contact-form" id="name" placeholder="Name" required>
-                                        <input name="email" type="email" class="form-control custom-contact-form" id="email" placeholder="Email">
-                                        <textarea name="message" rows="4" class="form-control custom-contact-form" id="message" placeholder="Message"></textarea>
-                                        <div class="col-md-6 col-sm-10">
-                                            <input name="submit" type="submit" class="form-control " id="submit" value="SEND">
-                                        </div>
-                                    </form>
+    <section class="contact-us" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="contact-details">
+                        <h3>New Event</h3>
+                        <p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi
+                            condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
+                        <p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent
+                            ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                            ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.</p>
+                        <a href="#" class="btn btn-danger">DOWNLOAD NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.9s">
+                    <div class="contact-form">
+                        <h2>Keep in touch</h2>
+                        <div class="form-field">
+                            <form action="" method="post">
+                                <input name="name" type="text" class="form-control custom-contact-form" id="name"
+                                    placeholder="Name" required>
+                                <input name="email" type="email" class="form-control custom-contact-form" id="email"
+                                    placeholder="Email">
+                                <textarea name="message" rows="4" class="form-control custom-contact-form" id="message"
+                                    placeholder="Message"></textarea>
+                                <div class="col-md-6 col-sm-10">
+                                    <input name="submit" type="submit" class="form-control " id="submit" value="SEND">
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
         </div>
     </section>
     <!-- contact us section.............................................. -->
@@ -641,7 +644,7 @@
                         <p class="wow fadeInUp" data-wow-delay="0.6s">Copyright &copy; 2016 Your Company | Design: <a rel="nofollow" href="#" target="_parent">Templatemo</a></p>
                     </div>
                     <div class="social-icon text-center mt-3">
-                            <ul class="social-icon">
+                            <ul>
                                 <li><a href="#" class="wow fadeInUp" data-wow-delay="1s">
                                     <i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#" class="wow fadeInUp" data-wow-delay="1.3s">

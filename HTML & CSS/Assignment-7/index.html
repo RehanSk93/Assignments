@@ -24,7 +24,7 @@
     <section class="social" id="social">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12 text-left">
+                <div class="col-md-6 col-sm-12">
                     <div class="social-icon">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -32,7 +32,7 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 text-right">
+                <div class="col-md-6 col-sm-12">
                     <div class="social-contact">
                         <a href="#"><i class="fas fa-phone"></i> +011 54925849</a>
                         <a href="#"><i class="fas fa-envelope"></i> contact@softech.com</a>
@@ -44,7 +44,7 @@
 
 
     <!-- Navigation bar section.................................. -->
-    <nav class="navbar  navbar-expand-lg custom-nav">
+    <nav class="navbar  navbar-expand-lg custom-nav ">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -73,13 +73,19 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline pl-5">
+                <form class="form-inline">
                     <button class="btn btn-outline-success custom-nav-btn" type="submit">Sign In</button>
                 </form>
             </div>
         </div>
     </nav>
     <!-- Navigation bar section.................................. -->
+
+
+
+    <!-- Move to top toggle -->
+    <div class="move-to-top" id="myBtn"><a href="#top"><i class="fas fa-chevron-up"></i></a></div>
+
 
 
     <!-- Banner section ----------------------------------------- -->
@@ -92,9 +98,9 @@
                 further.</p>
         </div>
         <div class="home-contact">
-            <form class="form-inline" action="/action_page.php">
-                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
-                <button type="submit" class="btn btn-primary">Use It Free</button>
+            <form class="form-inline" action="">
+                <input type="email" class="form-control" autocomplete="off" id="email" placeholder="Enter your email address">
+                <button type="submit" class="btn">Use It Free</button>
             </form>
         </div>
 
@@ -103,13 +109,13 @@
 
 
     <!-- PRODUCT section ---------------------------------------- -->
-    <section class="product pt-5 pb-5">
+    <section class="product">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12 mt-5">
+                <div class="col-md-6 col-sm-12">
                     <img src="./images/feature-2.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-6 col-sm-12 mt-5 pt-5">
+                <div class="col-md-6 col-sm-12">
                     <div class="product-text">
                         <h2>OUR PRODUCT</h2>
                         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non
@@ -130,7 +136,7 @@
     <section class="product-2">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12 mt-5 pt-5">
+                <div class="col-md-6 col-sm-12">
                     <div class="product-text">
                         <h2>PRODUCT DESCRIPTIONS</h2>
                         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non
@@ -144,7 +150,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mt-5">
+                <div class="col-md-6 col-sm-12">
                     <img src="./images/feature-1.jpg" alt="" class="img-fluid">
                 </div>
             </div>
@@ -214,7 +220,7 @@
 
 
     <!-- price sections ------------------------------------------ -->
-    <section class="price pb-5">
+    <section class="price">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -249,14 +255,14 @@
                     <div class="inner-container">
                         <div class="flip-card ">
                             <div class="front-side">
-                                <header class="pricing-header">
+                                <div class="pricing-header">
                                     <h2>Basic</h2>
                                     <p>
                                         <span class="currency">$</span>
                                         <span class="value-1">30</span>
-                                        <span class="duration">/mo</span>
+                                        <span class="duration">/MO</span>
                                     </p>
-                                </header>
+                                </div>
                                 <div class="pricing-body">
                                     <ul>
                                         <li><i class="fas fa-check-circle"></i> 20 Keyword</li>
@@ -265,19 +271,19 @@
                                         <li><i class="fas fa-check-circle"></i> News Letter Available</li>
                                     </ul>
                                 </div>
-                                <footer class="pricing-footer">
+                                <div class="pricing-footer">
                                     <a class="cd-select" href="#">Purchase</a>
-                                </footer>
+                                </div>
                             </div>
                             <div class="back-side">
-                                <header class="pricing-header">
+                                <div class="pricing-header">
                                     <h2>Basic</h2>
                                     <p>
                                         <span class="currency">$</span>
                                         <span class="value-1">320</span>
-                                        <span class="duration">/mo</span>
+                                        <span class="duration">/MO</span>
                                     </p>
-                                </header>
+                                </div>
                                 <div class="pricing-body">
                                     <ul>
                                         <li><i class="fas fa-check-circle"></i> 20 Keyword</li>
@@ -286,9 +292,9 @@
                                         <li><i class="fas fa-check-circle"></i> News Letter Available</li>
                                     </ul>
                                 </div>
-                                <footer class="pricing-footer">
+                                <div class="pricing-footer">
                                     <a class="cd-select" href="#">Purchase</a>
-                                </footer>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -297,14 +303,14 @@
                     <div class="inner-container">
                         <div class="flip-card ">
                             <div class="front-side">
-                                <header class="pricing-header-center">
+                                <div class="pricing-header-center">
                                     <h2>Popular</h2>
                                     <p>
                                         <span class="currency">$</span>
                                         <span class="value-1">60</span>
-                                        <span class="duration">/mo</span>
+                                        <span class="duration">/MO</span>
                                     </p>
-                                </header>
+                                </div>
                                 <div class="pricing-body">
                                     <ul>
                                         <li><i class="fas fa-check-circle"></i> 20 Keyword</li>
@@ -313,19 +319,19 @@
                                         <li><i class="fas fa-check-circle"></i> News Letter Available</li>
                                     </ul>
                                 </div>
-                                <footer class="pricing-footer">
+                                <div class="pricing-footer">
                                     <a class="cd-select" href="#">Purchase</a>
-                                </footer>
+                                </div>
                             </div>
                             <div class="back-side">
-                                <header class="pricing-header-center">
+                                <div class="pricing-header-center">
                                     <h2>Popular</h2>
                                     <p>
                                         <span class="currency">$</span>
                                         <span class="value-1">630</span>
-                                        <span class="duration">/mo</span>
+                                        <span class="duration">/MO</span>
                                     </p>
-                                </header>
+                                </div>
                                 <div class="pricing-body">
                                     <ul>
                                         <li><i class="fas fa-check-circle"></i> 20 Keyword</li>
@@ -334,9 +340,9 @@
                                         <li><i class="fas fa-check-circle"></i> News Letter Available</li>
                                     </ul>
                                 </div>
-                                <footer class="pricing-footer">
+                                <div class="pricing-footer">
                                     <a class="cd-select" href="#">Purchase</a>
-                                </footer>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,14 +351,14 @@
                     <div class="inner-container">
                         <div class="flip-card ">
                             <div class="front-side">
-                                <header class="pricing-header">
+                                <div class="pricing-header">
                                     <h2>Premier</h2>
                                     <p>
                                         <span class="currency">$</span>
                                         <span class="value-1">90</span>
-                                        <span class="duration">/mo</span>
+                                        <span class="duration">/MO</span>
                                     </p>
-                                </header>
+                                </div>
                                 <div class="pricing-body">
                                     <ul>
                                         <li><i class="fas fa-check-circle"></i> 20 Keyword</li>
@@ -361,19 +367,19 @@
                                         <li><i class="fas fa-check-circle"></i> News Letter Available</li>
                                     </ul>
                                 </div>
-                                <footer class="pricing-footer">
+                                <div class="pricing-footer">
                                     <a class="cd-select" href="#">Purchase</a>
-                                </footer>
+                                </div>
                             </div>
                             <div class="back-side">
-                                <header class="pricing-header">
+                                <div class="pricing-header">
                                     <h2>Premier</h2>
                                     <p>
                                         <span class="currency">$</span>
                                         <span class="value-1">950</span>
-                                        <span class="duration">/mo</span>
+                                        <span class="duration">/MO</span>
                                     </p>
-                                </header>
+                                </div>
                                 <div class="pricing-body">
                                     <ul>
                                         <li><i class="fas fa-check-circle"></i> 20 Keyword</li>
@@ -382,9 +388,9 @@
                                         <li><i class="fas fa-check-circle"></i> News Letter Available</li>
                                     </ul>
                                 </div>
-                                <footer class="pricing-footer">
+                                <div class="pricing-footer">
                                     <a class="cd-select" href="#">Purchase</a>
-                                </footer>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -585,10 +591,10 @@
                 <div class="col-md-4 col-sm-12">
                     <h5>Newsletter</h5>
                     <p>Insights await in your company's data. Bring them into focus with BlueLance.</p>
-                    <div class="input-group">
+                    <div class="input-group mt-5">
                         <input type="text" class="form-control footer-text" placeholder="Enter your email address">
 
-                        <button type="submit" class="btn btn-primary footer-btn">Use It Free</button>
+                        <button type="submit" class="btn footer-btn">Use It Free</button>
                     </div>
                 </div>
             </div>
@@ -636,6 +642,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="./js/main.js"></script>
+    <!-- move to top toggle section----- -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+        }
+    </script>
 </body>
 
 </html>

@@ -71,6 +71,9 @@ body{
     display: none;
     opacity: 0.8;
 }
+.navbar-nav .nav-link.active{
+    color: #4dafe0;
+}
 .move-to-top:hover{
     background: #F1545F;
 }
@@ -304,7 +307,7 @@ body{
 }
 .nav-tabs .nav-link.active{
     color: #f2545f;
-    cursor: default;
+    cursor: pointer;
     background-color: transparent;
     border: 1px solid transparent;
     border-bottom-color: #999;
@@ -342,9 +345,12 @@ body{
 
 
 /* register section................................ */
-.register{
+.register-section{
+    background: url('../images/register-bg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
     min-height: 600px;
-    background: transparent;
 }
 .reg-detail{
     position: relative;
@@ -468,9 +474,12 @@ body{
 
 
 /* vanue section..................................... */
-.vanue{
-    min-height: 400px;
-    background: transparent;
+.vanue-section{
+    background: url('../images/venue-bg.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 500px;
 }
 
 .vanue-text{
@@ -539,8 +548,8 @@ body{
     background: url('../images/contact-bg.jpg') no-repeat center;
     min-height: 500px;
     width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 .contact-details{
     padding-top: 6rem;
@@ -578,7 +587,7 @@ body{
 .contact-form{
     background-color: #ffffff;
     padding: 5rem 3rem;
-    margin-right: 5rem;
+    margin-right: 6rem;
 }
 .contact-form h2{
     color: #333333;
@@ -587,7 +596,7 @@ body{
     font-weight: 600;
     text-transform: uppercase;
 }
-.form-fild{
+.form-field{
     margin-top: 2.5rem;
 }
 .custom-contact-form{
@@ -595,14 +604,14 @@ body{
     border-bottom: 1px solid #555555;
     opacity: 0.5;
     border-radius: 0px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 .custom-contact-form:focus{
     border: none;
     border-bottom: 1px solid black;
     box-shadow: none;
 }
-.form-fild input[type="submit"]{
+.form-field input[type="submit"]{
     margin-top: 30px;
     background-color: #333333;
     border-radius: 25px;
@@ -613,7 +622,7 @@ body{
     letter-spacing: 2px;
     transition: 0.5s;
 }
-.form-fild input[type="submit"]:hover{
+.form-field input[type="submit"]:hover{
     background-color: #F1545F;
 }
 
@@ -630,12 +639,15 @@ footer{
     font-weight: 400;
     letter-spacing: 1px;
 }
+.social-icon ul{
+    padding-left: 0;
+}
 .social-icon ul li{
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    transition: 0.8s ease-in;
+    transition: 0.3s ease-in;
 }
 .social-icon ul li:hover{
     background-color: #F1545F;    
@@ -715,7 +727,26 @@ footer{
         padding-top: 1rem;
         padding-bottom: 2rem;
     }
-    .register-section{
-        height: 200px;
+    .vanue-text{
+        margin: 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .sponsor-img{
+        margin-bottom: 10px;
+    }
+    .sponsors{
+        padding-bottom: 0;
+    }
+    .contact-details{
+        padding: 10px;
+    }
+    .contact-details h3{
+        margin-top: 3rem;
+    }
+    .contact-form{
+        margin-top: 3rem;
+        margin-right: 0;
+        padding: 2rem 1rem;
     }
   }

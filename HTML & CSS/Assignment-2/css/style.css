@@ -19,7 +19,9 @@ body{
     line-height: 35px;
     letter-spacing: 1px;
 }
-
+.navbar-brand:hover{
+    color: #161616;
+}
 .nav-link{
     text-transform: uppercase;
     font-weight: 400;
@@ -356,6 +358,9 @@ body{
 .contentSection{
     background-color: #E9724C;
 }
+.contentText{
+    padding: 20px 30px 10px;
+}
 .contentText h1{
     padding-top: 4%;
     color: white;
@@ -369,6 +374,9 @@ body{
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 0.2px;
+}
+.contact-form{
+    padding: 20px 30px 10px;
 }
 .form-control{
     background: transparent;
@@ -407,6 +415,10 @@ body{
     background: transparent;
     border: 2px solid white;
     color: white;
+}
+.Contact{
+    padding: 0;
+    margin: 0;
 }
 .contactImg{
     background: url('../images/contact-img.jpg') no-repeat;
@@ -607,3 +619,19 @@ text-align: center;
         max-height: 388px;
     }
 } 
+
+@media only screen and (max-width: 576px) {
+    .nav{
+        display: block;
+        background: black;
+        opacity: 0.7;
+        padding: 20px;
+    }
+    .nav li a{
+        color: #ffffff;
+        opacity: 1;        
+    }
+    .customBtn{
+        padding: 10px 100px;
+    }
+}

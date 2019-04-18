@@ -23,7 +23,6 @@ header{
 }
 nav{
     margin: 0;
-    width: 50%;
     display: none;
     float: left;
     transform:translateY(-15px);
@@ -31,11 +30,11 @@ nav{
 nav ul{
     margin: 0;
     padding: 0;
-    display: flex;
     padding-top: 10px;
 }
 nav ul li{
     list-style: none;
+    display: inline-block;
 }
 nav ul li a{
     display:block;
@@ -985,6 +984,9 @@ header nav ul li a:hover{
 
 /* Media Query Section Start.............. */
 @media only screen and (max-width: 576px) {
+    nav ul li{
+        display: block;
+    }
     .intro-section-left h1{
         font-size: 60px;
     }
@@ -1069,6 +1071,12 @@ header nav ul li a:hover{
     .contact{
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+    .back-img{
+        position: absolute;
+        top: 73px;
+        right: -35px;
+        z-index: 400;
     }
   }
 

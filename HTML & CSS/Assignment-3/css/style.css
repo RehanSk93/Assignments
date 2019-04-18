@@ -378,8 +378,8 @@ h2{
         font-size: 22px;
     }
     .btn-custom {
-        padding: 6px 14px;
-        margin-top: 0px;
+        padding: 16px 14px;
+        margin-top: 10px;
     }
     #About{
         padding: 42px 0px;
@@ -398,10 +398,23 @@ h2{
     }
     .Standard{
         padding: 30px 0px;
-        margin: 30px 0px;
+        margin: 0px 0px;
     }
     .contact-area{
         margin-left: 5%;
         margin-right: 5%;
+    }
+}
+
+
+@media (max-width: 576px){
+    .navbar-collapse{
+        background: #000000;
+        opacity: 0.5;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    .nav-link{
+        color: #fff;
     }
 }
