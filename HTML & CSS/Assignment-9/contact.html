@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
+  <!-- Animation file -->
+  <link rel="stylesheet" href="./css/animate.min.css">
+
+
   <!-- Custom style -------------------------------- -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -23,9 +27,11 @@
 <body>
 
   <!-- Nav bar ----------------------------------------- -->
-  <nav class="navbar navbar-expand-lg  bg-light custom-navbar">
-    <div class="container p-2">
-      <a class="navbar-brand" href="./index.html">Flew</a>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <div class="brand">
+        <a class="navbar-brand" href="./index.html">Flew</a>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -33,23 +39,23 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav custom-nav-list ml-auto">
-          <li class="nav-item   pr-4">
+          <li class="nav-item">
             <a class="nav-link" href="./work.html">Work</a>
           </li>
-          <li class="nav-item  pr-4 ">
+          <li class="nav-ite ">
             <a class="nav-link" href="./services.html">Services</a>
           </li>
-          <li class="nav-item  pr-4 ">
+          <li class="nav-ite ">
             <a class="nav-link" href="./pricing.html">Pricing</a>
           </li>
-          <li class="nav-item  pr-4 ">
+          <li class="nav-ite ">
             <a class="nav-link" href="#">About</a>
           </li>
-          <li class="nav-item  pr-4 ">
-            <a class="nav-link active-link" href="./contact.html">Contact</a>
+          <li class="nav-ite ">
+            <a class="nav-link" href="./contact.html">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline">
           <button class="btn btn-outline-success custom-nav-btn" type="submit">Get started</button>
         </form>
       </div>
@@ -73,56 +79,61 @@
 
   <!-- Contact Details section ---------------------------------- -->
   <section class="contact-section">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-4 col-sm-12"></div>
-              <div class="col-md-8 col-sm-12">
-                  <div class="contact-title">
-                    <h2>Contact Details</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p><br><br>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12"></div>
+        <div class="col-md-8 col-sm-12">
+          <div class="contact-title">
+            <h2>Contact Details</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+              blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+              live the blind texts. Separated they live in Bookmarksgrove. Far far away, behind the word mountains, far
+              from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word
+              mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live
+              in Bookmarksgrove.</p><br><br>
           </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="contact-info">
-                <h3>Contact Info.</h3>
-              </div>
-              <ul class="contact-info-list">
-                <li><i class="fas fa-map-marker-alt"></i> 198 West 21th Street, New York NY 10016</li>
-                <li><i class="fas fa-phone"></i> + 1235 2355 98</li>
-                <li><i class="fas fa-envelope"></i><a href="#">info@yoursite.com</a></li>
-                <li><i class="fas fa-globe-europe"></i><a href="#">www.yoursite.com</a></li>
-              </ul>
-            </div>
-            <div class="col-md-8 col-sm-12">
-              <div class="contact-form">
-                <form action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Name" required class="form-control custom-form" id="usr">
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Email" required  class="form-control custom-form" id="usr">
-                      </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                      <div class="form-group">
-                        <textarea class="form-control custom-form" placeholder="Message" rows="7" id="comment"></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                      <button type="button" class="btn btn-primary contact-form-btn ">Send Message</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="contact-info">
+            <h3>Contact Info.</h3>
+          </div>
+          <ul class="contact-info-list">
+            <li><i class="fas fa-map-marker-alt"></i> 198 West 21th Street, <span class="span-position">New York NY 10016</span></li>
+            <li><i class="fas fa-phone"></i> + 1235 2355 98</li>
+            <li><i class="fas fa-envelope"></i><a href="#">info@yoursite.com</a></li>
+            <li><i class="fas fa-globe-europe"></i><a href="#">www.yoursite.com</a></li>
+          </ul>
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="contact-form">
+            <form action="" method="post">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" placeholder="Name" required class="form-control custom-form" id="usr">
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <input type="text" placeholder="Email" required class="form-control custom-form" id="usr">
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <div class="form-group">
+                    <textarea class="form-control custom-form" placeholder="Message" rows="7" id="comment"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                  <button type="submit" class="btn btn-primary contact-form-btn ">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Contact Details section ---------------------------------- -->
 
@@ -140,47 +151,53 @@
   <section class="footer-body">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-12">
-          <div class="footer-title">
-            <h3>About Us</h3>
-          </div>
-          <div class="footer-content">
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. </p>
-            <p><a href="#" class="btn btn-outline-primary overlay-btn">Join Us &nbsp;&nbsp;<i
-                  class="fas fa-arrow-right"></i></a></p>
+        <div class="col-md-4 col-sm-12">
+          <div class="footer-outer-content">
+            <div class="footer-title">
+              <h3>About Us</h3>
+            </div>
+            <div class="footer-content">
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts. </p>
+              <p><a href="#" class="btn btn-outline-primary overlay-btn">Join Us &nbsp;&nbsp;<i
+                    class="fas fa-arrow-right"></i></a></p>
+            </div>
           </div>
         </div>
-        <div class="col-md-7 col-sm-12 pl-5">
-          <div class="footer-title">
-            <h3>Our Services</h3>
-          </div>
-          <div class="footer-service-list">
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Branding &amp; Identity</a></li>
-              <li><a href="#">Free HTML5</a></li>
-              <li><a href="#">HandCrafted Templates</a></li>
-            </ul>
-            <ul class="left-padding">
-              <li><a href="#">Free Bootstrap Template</a></li>
-              <li><a href="#">Free HTML5 Template</a></li>
-              <li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
-              <li><a href="#">HandCrafted Templates</a></li>
-            </ul>
+        <div class="col-md-6 col-sm-12">
+          <div class="footer-outer-content">
+            <div class="footer-title">
+              <h3>Our Services</h3>
+            </div>
+            <div class="footer-service-list">
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Branding &amp; Identity</a></li>
+                <li><a href="#">Free HTML5</a></li>
+                <li><a href="#">HandCrafted Templates</a></li>
+              </ul>
+              <ul class="left-padding">
+                <li><a href="#">Free Bootstrap Template</a></li>
+                <li><a href="#">Free HTML5 Template</a></li>
+                <li><a href="#">Free HTML5 &amp; CSS3 Template</a></li>
+                <li><a href="#">HandCrafted Templates</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-md-2 col-sm-12">
-          <div class="footer-title">
-            <h3>FOLLOW US</h3>
-          </div>
-          <div class="social-link">
-              <ul>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
+          <div class="footer-outer-content">
+            <div class="footer-title">
+              <h3>FOLLOW US</h3>
+            </div>
+            <div class="social-link">
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -204,7 +221,6 @@
 
 
 
-
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -213,6 +229,13 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <!-- CSS Animations.......................................... -->
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 
 </body>
 

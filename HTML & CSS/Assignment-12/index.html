@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/animate.min.css">
+
     <!-- Custom style sheet --------------------------------------- -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -19,18 +21,19 @@
 
 
     <!-- navigation section ------------------------------------------>
-    <nav class="navbar navbar-expand-lg custom-nav p-4">
+    <nav class="navbar navbar-expand-lg custom-nav">
         <div class="container">
-            
             <a class="navbar-brand" href="#">
                 <img src="./img/logo.png" alt="" class="light-img">
                 <img src="./img/logo-dark.png" alt="" class="dark-img">
             </a>
-            
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </span>
             </button>
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -67,7 +70,6 @@
                     <div class="banner-text">
                         <h1>Alex <br /> Teseira</h1>
                         <p>Web Designer &amp; Front-end Developer</p>
-                        
                     </div>
                     <div class="banner-line"></div>
                     <div class="banner-social-icon">
@@ -87,6 +89,10 @@
 
 
 
+    <!-- move to top toggle section ---------------------- -->
+    <div class="move-to-top" id="myBtn"><a href="#top">TOP</a></div>
+
+
     <!-- Intro section -------------------------------------------- -->
     <section class="intro" id="about">
         <div class="container">
@@ -98,33 +104,33 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">
-                    <div class="intro-content pl-5">
+                    <div class="intro-content">
                         <p>I'm Alex Teseira, orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="intro-progress-bar pl-5">
+                    <div class="intro-progress-bar">
                         <div class="item-1">
                             <p>PHP <span>87%</span></p>
                             <div class="progress" style="height:3px">
-                                <div class="progress-bar" style="width:87%"></div>
+                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" style="width:87%"></div>
                             </div>
                         </div>
                         <div class="item-1">
                             <p>HTML5 <span>96%</span></p>
                             <div class="progress" style="height:3px">
-                                <div class="progress-bar" style="width:96%"></div>
+                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".6s" style="width:96%"></div>
                             </div>
                         </div>
                         <div class="item-1">
                             <p>JavaSript <span>52%</span></p>
                             <div class="progress" style="height:3px">
-                                <div class="progress-bar" style="width:52%"></div>
+                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".8s" style="width:52%"></div>
                             </div>
                         </div>
                         <div class="item-1">
                             <p>Photoshop <span>77%</span></p>
                             <div class="progress" style="height:3px">
-                                <div class="progress-bar" style="width:77%"></div>
+                                <div class="progress-bar wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1s" style="width:77%"></div>
                             </div>
                         </div>
                     </div>
@@ -148,7 +154,7 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">
-                    <div class="row ml-5">
+                    <div class="row left-position">
                         <div class="col-md-4 col-sm-12 p-0">
                             <div class="exp-container">
                                 <div class="exp-icon">
@@ -160,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 p-0">
+                        <div class="col-md-4 col-sm-12 p-0  wow zoomIn" data-height="height" data-wow-duration=".6" data-wow-delay=".1s">
                             <div class="exp-container-middle">
                                 <div class="exp-icon-middle">
                                     <i class="fas fa-tablet-alt"></i>
@@ -202,34 +208,34 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">
-                    <div class="row ml-5">
-                        <div class="col-md-8 col-sm-12 p-0 pr-1" data-toggle="modal" data-target="#myModal">
+                    <div class="row left-position">
+                        <div class="col-md-8 col-sm-12 custom-position" data-toggle="modal" data-target="#myModal">
                             <div class="work-img">
                                 <div class="overlay"></div>
                                 <img src="./img/800x400/01.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 p-0 pb-1" data-toggle="modal" data-target="#myModal">
+                        <div class="col-md-4 col-sm-12 custom-position" data-toggle="modal" data-target="#myModal">
                             <div class="work-img">
                                 <div class="overlay"></div>
                                 <img src="./img/397x400/01.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="row ml-5">
-                        <div class="col-md-4 col-sm-12 p-0 pr-1" data-toggle="modal" data-target="#myModal">
+                    <div class="row left-position">
+                        <div class="col-md-4 col-sm-12 custom-position" data-toggle="modal" data-target="#myModal">
                             <div class="work-img">
                                 <div class="overlay"></div>
                                 <img src="./img/397x300/01.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 p-0 pr-1" data-toggle="modal" data-target="#myModal">
+                        <div class="col-md-4 col-sm-12  custom-position" data-toggle="modal" data-target="#myModal">
                             <div class="work-img">
                                 <div class="overlay"></div>
                                 <img src="./img/397x300/02.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-12 p-0" data-toggle="modal" data-target="#myModal">
+                        <div class="col-md-4 col-sm-12 custom-position" data-toggle="modal" data-target="#myModal">
                             <div class="work-img">
                                 <div class="overlay"></div>
                                 <img src="./img/397x300/03.jpg" alt="">
@@ -255,7 +261,7 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">
-                    <div class="row ml-5 mt-3">
+                    <div class="row left-position">
                         <div class="col-md-3 col-sm-6 contact-details">
                             <h5>Location</h5>
                             <a href="#">Brookyln, New York</a>
@@ -285,10 +291,10 @@
     <section class="footer">
         <div class="container">
             <div class="row p-4">
-                <div class="col-md-6 col-sm-12 text-left">
+                <div class="col-5 footer-left">
                     <img src="./img/logo-dark.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6 col-sm-12 text-right pt-2 footer-content">
+                <div class="col-7 footer-right">
                     <p><a href="http://keenthemes.com/preview/aircv/">Aircv</a> Theme Powered by: <a href="http://www.keenthemes.com/">KeenThemes.com</a></p>
                 </div>
             </div>
@@ -351,20 +357,40 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
     <!-- Scroll function for navbar -->
     <script>
-            $(window).on('scroll', function(){
-                if($(window).scrollTop() > 30){
-                    $('nav').addClass('blackBar');
-                    $('.light-img').hide();
-                    $('.dark-img').show();
-                }else{
-                    $('nav').removeClass('blackBar');
-                    $('.light-img').show();
-                    $('.dark-img').hide();
-                }
-            })
-        </script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 30) {
+                $('nav').addClass('blackBar');
+                $('.light-img').hide();
+                $('.dark-img').show();
+            } else {
+                $('nav').removeClass('blackBar');
+                $('.light-img').show();
+                $('.dark-img').hide();
+            }
+        })
+    </script>
+
+
+    <!-- move to top toggle section----- -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
+    </script>
 </body>
 
 </html>

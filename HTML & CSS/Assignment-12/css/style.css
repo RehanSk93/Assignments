@@ -31,6 +31,9 @@ p{
 }
 
 /* Navigation section ------------------------------------------------ */
+.container{
+    max-width: 1200px;
+}
 .custom-nav{
     border-bottom: 1px solid #B1B8BD;
     position: fixed;
@@ -38,6 +41,8 @@ p{
     left: 0;
     width: 100%;
     z-index: 10;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .custom-nav-link{
     color: #ffffff;
@@ -77,9 +82,60 @@ nav .custom-nav-link:after {
 nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
     opacity: 1;
 }
-
-
-
+.bar-1{
+    width: 10px;
+    height: 2px;
+    background: #17BED2;
+    display: block;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+.bar-2{
+    width: 20px;
+    height: 2px;
+    background: #17BED2;
+    display: block;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+.bar-3{
+    width: 30px;
+    height: 2px;
+    background: #17BED2;
+    display: block;
+    margin-bottom: 4px;
+    transition: 0.5s;
+}
+.navbar-toggler:hover .bar-1, .navbar-toggler:hover .bar-2, .navbar-toggler:hover .bar-3 {
+    width: 30px;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.move-to-top{
+    background: #4443439d;
+    box-shadow: 4px 10px 14px 1px rgba(238, 235, 235, 0.418);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 4px;
+    transition: 0.9s ease;
+    z-index: 1000;
+    display: none;
+    opacity: 0.7;
+}
+.move-to-top a{
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 10x;
+    font-weight: 400;
+    line-height: 40px;
+    text-decoration: none;
+}
 
 /* Banner section ------------------------------------ */
 .banner{
@@ -110,7 +166,7 @@ nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
 }
 .banner-line{
     margin-top: 2.5rem;
-    height: 0.5px;
+    height: 1px;
     width: 50%;
     background: #C8C8CB;
 }
@@ -119,6 +175,7 @@ nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
 }
 .banner-social-icon ul{
     list-style-type: none;
+    padding-left: 0;
 }
 .banner-social-icon ul li{
     display: inline-block;
@@ -142,14 +199,19 @@ nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
 
 
 /* Intro section ----------------------------------------- */
+.intro-content{
+    padding-left: 6rem;
+}
 .intro-content p{
     color: #a6a7aa;
     font-size: 15px;
     font-weight: 400;
     text-align: left;
+    
 }
 .intro-progress-bar{
     margin-top: 3rem;
+    padding-left: 6rem;
 }
 .intro-progress-bar span{
     float: right;
@@ -174,6 +236,12 @@ nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
 /* experience section ----------------------------------------- */
 .experience{
     background: #FAFAFA;
+}
+.left-position{
+    margin-left: 6rem;
+}
+.custom-position{
+    padding: 2px;
 }
 .exp-container, .exp-container-middle{
     background: #ffffff;
@@ -323,15 +391,73 @@ nav .custom-nav-link.active:after, nav .nav-item:hover .custom-nav-link::after{
     font-weight: 400;
     text-decoration: none;
 }
-.footer-content p a{
+.footer-right{
+    text-align: right;
+}
+.footer-right p a{
     color: #999caa;
     font-size: 15px;
     line-height: 21px;
     font-weight: 700;
 }
-.footer-content p{
+.footer-right p{
     color: #a6a7aa;
     font-size: 15px;
     font-weight: 400;
 }
 
+
+
+
+/* Media Queries ------------------- */
+@media screen and (max-width: 576px) {
+    .navbar-toggler{
+        position: absolute;
+        top: 44px;
+        right: 30px;
+    }
+    nav .custom-nav-link:after{
+        left: -1px;
+    }
+    .navbar-nav .nav-link{
+        margin-left: 1rem;
+    }
+    .banner{
+        background-position: left top;
+    }
+    .banner-text{
+        margin-top: 60%;
+    }
+    .banner-text h1{
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .title-section h2{
+        text-align: left;
+    }
+    .title-section p{
+        text-align: left;
+    }
+    .intro-content{
+        padding-left: 0;
+    }
+    .intro-progress-bar{
+        padding-left: 0;
+    }
+    .title-section p{
+        margin-bottom: 30px;
+    }
+    .left-position{
+        margin-left: 0;
+    }
+    .custom-position{
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    .contact-details{
+        margin-bottom: 1.8rem;
+    }
+    .footer-right{
+        text-align: left;
+    }
+  }

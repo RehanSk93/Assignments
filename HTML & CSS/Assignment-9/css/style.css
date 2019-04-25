@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -12,6 +19,9 @@ body{
     padding-bottom: 3rem;
     max-width: 700px;
     margin: 0px auto;
+}
+.custom-card{
+    margin-top: 2rem;
 }
 .section-title h2{
     color: #000000;
@@ -31,13 +41,17 @@ body{
 }
 
 
-
 /* Nav bar section ------------------------------------------- */
+.custom-navbar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 .custom-nav-list li a{
     color: #4C4C4C;
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 400;
+    margin-right: 1rem;
 }
 .custom-nav-list li a:hover{
     color: #27e1ce;
@@ -48,9 +62,14 @@ body{
     border-radius: 20px;
     color: #27e1ce;
     border: 2px solid #27e1ce;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 18px;
+}
+.custom-nav-btn:focus{
+    background: #27e1ce !important;
+    border: 0px !important;
+
 }
 .custom-nav-btn:hover{
     background: #27e1ce;
@@ -61,6 +80,19 @@ body{
     color: #000000;
     font-size: 30px;
     font-weight: 700;
+}
+.brand{
+    position: relative;
+}
+.navbar-brand::after{
+    content: '';
+    position: absolute;
+    top: 32px;
+    right: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #27E0CD;
 }
 .navbar-brand:hover{
     color: #000000;
@@ -99,7 +131,11 @@ body{
     border: 1px solid #27e1ce;
     color: #ffffff;
 }
-
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
 
 
 /* Features section ------------------------------------------- */
@@ -108,6 +144,7 @@ body{
 }
 .features-body{
     display: flex;
+    margin-top: 2rem;
 }
 .features-body i{
     font-size: 40px;
@@ -163,7 +200,11 @@ body{
 .card:hover{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
+.project-btn{
+    margin-top: 3rem;
+}
 .project-btn a{
+    position: relative;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
@@ -171,15 +212,29 @@ body{
     border-radius: 20px;
     background: #27e1ce;
     border: 1px solid #27e1ce;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 20px;
+    transition: 0.5s;
+}
+.project-btn a:hover{
+    padding-right: 30px;
     transition: 0.5s;
 }
 .project-btn a i{
-    display: none;
-    transition: all 0.5s ease;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -8px;
+    transition: 0.2s;
+
 }
 .project-btn a:hover i{
-    display: inline-block;
+    
+    right: 18px;
+    visibility: visible;
+    opacity: 1;
 }
 .project-btn a:hover{
     background: #27e1ce;
@@ -218,7 +273,13 @@ body{
 .testimony-content span a{
     color: #27e1ce;
 }
-
+.owl-theme .owl-dots .owl-dot span{
+    margin-top: 2rem;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: transparent;
+    border: 2px solid #27E0CD;
+}
 
 
 /* Blog section ------------------------------------------------------- */
@@ -266,6 +327,7 @@ body{
     background: #FCFCFC;
 }
 .price-content{
+    background: #ffffff;
     min-height: 300px;
     width: 100%;
     box-shadow: 1px 1px 1.5px 0.2px rgba(0, 0, 0, 0.151);
@@ -311,7 +373,7 @@ body{
     font-size: 30px;
     font-weight: 400;
     position: relative;
-    top: -40px;
+    top: -24px;
     left: -10px;
 }
 .price-body{
@@ -352,7 +414,7 @@ body{
     font-size: 30px;
     font-weight: 400;
     position: relative;
-    top: -40px;
+    top: -24px;
     left: -10px;
 }
 .price-title-highlight h2{
@@ -412,25 +474,30 @@ body{
     margin-bottom: 2rem;
 }
 .overlay-btn{
-    border: 1px solid #27E0CD;
+    border: 2px solid #27E0CD;
     color: #ffffff;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 10px 0px 10px 20px;
     transition: 0.5s;
 }
 .overlay-btn:hover{
     background: #27E0CD;
+    border: 2px solid #27E0CD;
     color: #ffffff;
+    padding-right: 20px;
+    transition: 0.5s;
 }
-.overlay-content i{
-    display: none;
+.overlay-btn i{
+    visibility: hidden;
+    opacity: 0;
     transition: 0.5s;
 }
 .overlay-btn:hover i{
-    display: inline-block;
+    visibility: visible;
+    opacity: 1;
 }
 .overlay-btn:focus{
     box-shadow: 0px;
@@ -460,7 +527,8 @@ body{
     margin-top: 25px;
 }
 .footer-content i{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     transition: 0.5s;
 }
 .footer-service-list ul{
@@ -475,6 +543,10 @@ body{
     text-align: left;
     text-decoration: none;
     opacity: 0.5;
+    transition: 0.3s;
+}
+.footer-service-list ul li:hover a{
+    opacity: 1;
 }
 .left-padding{
     margin-left: 5rem;
@@ -491,6 +563,7 @@ body{
     color: #ffffff;
     font-weight: 400;
     opacity: 0.5;
+    transition: 0.5s;
 }
 .social-link ul li a i:hover{
     opacity: 1;
@@ -592,23 +665,26 @@ hr{
     margin-bottom: 2rem;
 }
 .pleasure-body a{
-    padding: 10px 20px;
+    padding: 10px 0px 10px 20px;
     border-radius: 20px;
     border: 2px solid #27e1ce;
     color: #27e1ce;
     transition: 0.3s;
 }
 .pleasure-body a:hover{
+    padding-right: 20px;
     background: #27e1ce;
     color: #ffffff;
     border: 2px solid #27e1ce;
 }
 
 .pleasure-body i{
-    display: none;
+    visibility: hidden;
+    opacity: 0;    
 }
 .pleasure-body a:hover i{
-    display: inline;
+    visibility: visible;
+    opacity: 1;
 }
 .service-overlay{
     background: url('../images/slide_1.jpg') no-repeat center;
@@ -721,3 +797,93 @@ hr{
     height: 450px;
     padding: 0;
 }
+
+
+
+
+
+/* Media Queries Section ----------------------------- */
+@media screen and (max-width: 576px) {
+    .custom-navbar{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .custom-nav-btn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: 0.5s;
+    }
+    .navbar-nav .nav-link{
+        transition: 0.5s;
+    }
+    .custom-nav-list li a:hover {
+        border-bottom: 1px solid rgb(39, 225, 206);
+    }
+    .banner-text h2{
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .banner-text{
+        top: 35%;
+    }
+    .carousel-inner{
+        height: 100vh;
+    }
+    .section-title{
+        padding-bottom: 1rem;
+    }
+    .custom-card{
+        margin-top: 20px;
+    }
+    .price-content{
+        margin-top: 20px;
+    }
+    .blog{
+        padding-bottom: 3rem;
+    }
+    .footer-body{
+        padding-top: 4rem;
+        padding-bottom: 3rem;   
+    }
+    .footer-outer-content{
+        margin-top: 3.5rem;
+    }
+    .left-padding{
+        margin-left: 0;
+    }
+    .slider-text-inner h2{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .slider-text-inner p{
+        font-size: 17px;
+    }
+    .pleasure-body h3{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    .pleasure-body p{
+        margin-bottom: 1rem;
+    }
+    .pleasure-body{
+        margin-bottom: 3rem;
+    }
+    .contact-section{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .contact-title h2{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .contact-info-list{
+        margin-bottom: 2rem;
+    }
+    .contact-info-list li{
+        line-height: 35px;
+    }
+    .span-position{
+        display: block;
+        padding-left: 42px;
+    }
+  }

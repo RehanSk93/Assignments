@@ -11,27 +11,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- fontawesome -------------------------------------------------- -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- Animation --- -->
+    <link rel="stylesheet" href="./css/animate.min.css">
 
     <!-- Custom style sheet -------------------------------- -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 
     <!-- small nav bar ------------------------------------------- -->
     <section class="top-nav">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="banner-img">
-                        <img src="./images/logo.png" alt="" height="130" width="230">
-                    </div>
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <div class="top-nav-contact text-center">
+                
+                <div class="col-md-9 col-sm-12">
+                    <div class="top-nav-contact">
                         <a href=""><i class="far fa-clock"></i>&nbsp;&nbsp; Order Foods 24/7</a>
                         <a href=""><i class="fas fa-phone-volume"></i>&nbsp;&nbsp; 061 9876 5432</a>
                     </div>
@@ -57,30 +55,32 @@
     <!-- Navigation Bar ----------------------------------------- -->
     <nav class="navbar navbar-expand-lg nav-container">
         <div class="container">
+    
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" height="130" width="250"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="#Menu">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#Features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delivery</a>
+                        <a class="nav-link" href="#Delivery">Delivery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link" href="#News">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pages</a>
+                        <a class="nav-link" href="#Pages">Pages</a>
                     </li>
     
                 </ul>
@@ -96,35 +96,44 @@
 
 
     <!-- banner section ----------------------------------------- -->
-    <section class="banner">
+    <section class="banner" id="Home">
         <div class="overlay"></div>
         <div class="banner-content">
-                <h1>Foody Love</h1>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
-                <button href="" class="btn custom-banner-btn btn-lg">Click here</button>
+            <h1>Foody Love</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+            <button href="" class="btn custom-banner-btn btn-lg">Click here</button>
         </div>
     </section>
     <!-- banner section ----------------------------------------- -->
 
 
+    <!-- move to top toggle section ---------------------- -->
+    <div class="move-to-top" id="myBtn"><a href="#top"><i class="fas fa-chevron-up"></i></a></div>
+
 
     <!-- About us section -------------------------------------- -->
-    <section class="about-us">
+    <section class="about-us" id="Menu">
         <div class="container">
-            <div class="row pt-5 pb-5">
-                <div class="col-md-6 col-sm-12">
+            <div class="row about-img-container">
+                <div class="col-md-6 col-sm-12 wow slideInLeft" data-wow-duration="1s">
                     <div class="about-img text-center">
                         <img src="./images/ab.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 wow slideInRight" data-wow-duration="1s">
                     <div class="about-content text-left">
                         <h4>About us</h4>
                         <h3>WE ARE TASTY</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
-
-                        <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's stan</p>
+    
+                        <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting</p>
+    
                         <a href="" class="btn btn-custom-abt">click here</a>
                     </div>
                 </div>
@@ -138,17 +147,22 @@
 
 
     <!-- Special Recipes ---------------------------------------- -->
-    <section class="Special-Recipes">
+    <section class="Special-Recipes" id="Features">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12"  style="z-index: 5">
+                <div class="col-md-6 col-sm-12" style="z-index: 5">
                     <div class="recipes-left">
                         <h4>Special Recipes</h4>
                         <h3>Taste of Precious</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
-                        <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's stan</p>
+                        <p>dard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                            electronic typesettingdard dummy text ever since the 1500s,when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting</p>
+    
                         <a href="" class="btn btn-custom-abt">click here</a>
                     </div>
                 </div>
@@ -157,7 +171,7 @@
                 </div>
             </div>
         </div>
-        
+    
     </section>
     <!-- Special Recipes ---------------------------------------- -->
 
@@ -165,10 +179,10 @@
 
 
     <!-- Delightful section ------------------------------------ -->
-    <section class="delightful">
+    <section class="delightful" id="Delivery">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-12 col-sm-12 wow fadeIn" data-wow-duration="5s">
                     <div class="delightful-title text-center">
                         <h4>Delightful</h4>
                         <h3>Experience</h3>
@@ -268,7 +282,7 @@
 
 
     <!-- Amazing Delicious section ----------------------------- -->
-    <section class="amazing-delicious">
+    <section class="amazing-delicious" id="News">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-center">
@@ -278,10 +292,10 @@
                     </div>
                 </div>
             </div>
-
-
+    
+    
             <!-- First row -------------- -->
-            <div class="row pb-5 mb-5">
+            <div class="row pb-5 mb-5 wow rotateInDownRight">
                 <div class="col-md-6 col-sm-12">
                     <div class="delicious-img">
                         <img src="./images/newsone.jpg" class="img-fluid" alt="">
@@ -291,27 +305,27 @@
                     <div class="delicious-content">
                         <h4>Drinks</h4>
                         <ul>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
                         </ul>
                     </div>
                 </div>
             </div>
-
+    
             <!-- Second row ------------ -->
-            <div class="row pb-5 mb-5">
+            <div class="row pb-5 mb-5  wow rotateInDownLeft">
                 <div class="col-md-6 col-sm-12" style="z-index:10">
                     <div class="delicious-content-2">
                         <h4>Drinks</h4>
                         <ul>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
                         </ul>
                     </div>
                 </div>
@@ -321,10 +335,10 @@
                     </div>
                 </div>
             </div>
-
-
+    
+    
             <!-- Third row -------------- -->
-            <div class="row pb-5 mb-5">
+            <div class="row pb-5 mb-5 wow rotateInDownRight">
                 <div class="col-md-6 col-sm-12">
                     <div class="delicious-img">
                         <img src="./images/newsthree.jpg" class="img-fluid" alt="">
@@ -334,11 +348,11 @@
                     <div class="delicious-content">
                         <h4>Drinks</h4>
                         <ul>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
-                            <li>Tuna Roast So....................................................$24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
+                            <li>Tuna Roast So.....<span>................................................</span> $24.5 </li>
                         </ul>
                     </div>
                 </div>
@@ -352,10 +366,10 @@
 
 
     <!-- MOBILE APP section ------------------------------------ -->
-    <section class="mobile-app">
+    <section class="mobile-app" id="Pages">
         <div class="container">
             <div class="overlay"></div>
-            <div class="row">
+            <div class="row wow zoomIn">
                 <div class="col-md-5 col-sm-12" style="z-index:2">
                     <div class="app-container text-center">
                         <img src="./images/iphone.png" class="img-fluid" alt="">
@@ -366,8 +380,10 @@
                         <h4> Happy to Announce </h4>
                         <h1>Mobile App <span>is Available in every OS platform.</span></h1>
                         <div class="app-btn">
-                            <a href="#"><img src="./images/google.png" class="img-fluid" height="150" width="230" alt="" /></a>
-                            <a href="#"><img src="./images/apps.png" class="img-fluid" alt="" height="150" width="230" /></a>
+                            <a href="#"><img src="./images/google.png" class="img-fluid" height="150" width="230"
+                                    alt="" /></a>
+                            <a href="#"><img src="./images/apps.png" class="img-fluid" alt="" height="150"
+                                    width="230" /></a>
                         </div>
                     </div>
                 </div>
@@ -383,7 +399,7 @@
     <section class="footer-widget">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 footer-widget-container wow fadeIn" data-wow-duration="2s">
                     <div class="footer-title text-center">
                         <h3>Take it easy with location</h3>
                     </div>
@@ -405,7 +421,7 @@
                         <a href="#"><i class="fas fa-camera"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 footer-widget-container wow fadeIn" data-wow-duration="4s">
                     <div class="footer-title text-center">
                         <h3>Take it easy with location</h3>
                     </div>
@@ -418,11 +434,11 @@
                         <span>11:00am to 12:00pm(Lunch/Dinner)</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 footer-widget-container wow fadeIn" data-wow-duration="6s">
                     <div class="footer-title text-center">
                         <h3>Take it easy with location</h3>
                     </div>
-
+    
                     <div class="footer-contact-form">
                         <form action="/action_page.php">
                             <div class="form-group">
@@ -435,29 +451,30 @@
                                 <input type="text" placeholder="Subject" class="form-control form-control-sm" id="email">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control form-control-sm" rows="3" placeholder="Message" id="comment"></textarea>
+                                <textarea class="form-control form-control-sm" rows="3" placeholder="Message"
+                                    id="comment"></textarea>
                             </div>
                             <button type="submit" class="btn btn-custom-abt ">CLICK HERE</button>
                         </form>
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
                 </div>
             </div>
         </div>
@@ -469,9 +486,10 @@
     <section class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-12 col-sm-12 wow zoomIn" data-wow-duration="3s">
                     <div class="footer-copyright-content text-center">
-                        <p>Made with <i class="fas fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a> 2016. All Rights Reserved</p>
+                        <p>Made with <i class="fas fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap
+                                Themes</a> 2016. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
@@ -480,7 +498,9 @@
     <!-- Footer Bottom section -------------------------------- -->
 
 
+
     
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -489,6 +509,41 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <!-- wow Animation ------------- -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!-- Scroll function------------------ -->
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 40) {
+                $('.top-nav').addClass('hideBar');
+                $('nav').addClass('moveUp');
+            } else {
+                $('.top-nav').removeClass('hideBar');
+                $('nav').removeClass('moveUp');
+            }
+        })
+    </script>
+
+
+    <!-- move to top toggle section----- -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+    }
+    </script>
 </body>
 
 </html>

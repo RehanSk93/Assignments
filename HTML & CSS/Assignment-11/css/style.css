@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
@@ -14,12 +16,19 @@ body{
     min-height: 35px;
     background: #ffffff;
     line-height: 35px;
-    position: relative;
-}
-.banner-img{
     position: fixed;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    z-index: 99;
+    transition: 0.5s;
+}
+.hideBar{
+    visibility: hidden;
+    opacity: 0;
+}
+.top-nav-contact{
+    padding-right: 9rem;
+    text-align: right;
 }
 .top-nav-contact a{
     padding-right: 1.5rem;
@@ -44,10 +53,25 @@ body{
     padding: 15px;
     background-color: #070707b4;
     position: fixed;
-    width: 100%;
-    top: 35;
+    top: 35px;
     left: 0;
+    width: 100%;
     z-index: 100;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    transition: 0.5s;
+}
+.moveUp{
+    top: 0px;
+}
+nav.moveUp img{
+    top: 0;
+}
+.navbar-brand img{
+    position: absolute;
+    top: -35px;
+    left: 180px;
     transition: 0.5s;
 }
 .nav-container ul li{
@@ -75,7 +99,33 @@ body{
     border: 1px solid #ffffff;
     color: #E7A331;
 }
-
+.navbar-toggler-icon i{
+    color: #ffffff;
+}
+nav .nav-item .active{
+    color: #E7A331 !important;
+}
+.move-to-top{
+    background: #44434377;
+    box-shadow: 4px 10px 14px 1px rgba(238, 235, 235, 0.418);
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    z-index: 1000;
+    display: none;
+    opacity: 0.7;
+}
+.move-to-top i{
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+}
 
 /* banner section ---------------------------------------------- */
 .banner{
@@ -109,6 +159,7 @@ body{
     font-size: 90px;
     font-family: 'Pacifico', cursive;
     font-weight: 300;
+    margin-top: 4rem;
     padding-bottom: 3rem;
 }
 .banner-content p{
@@ -140,6 +191,9 @@ body{
     overflow: hidden;
     padding-top: 5rem;
     padding-bottom: 3rem;
+}
+.about-img-container{
+    margin-top: 4rem;
 }
 .about-content h4{
     color: #000000;
@@ -262,6 +316,8 @@ body{
 }
 .delightful-img-container{
     position: relative;
+    top: 0;
+    text-align: center;
 }
 .overlay-1{
     position: absolute;
@@ -519,3 +575,100 @@ body{
 .footer-copyright-content a{
     color: #008000;
 }
+
+
+/* Media Queries -------------- */
+@media screen and (max-width: 576px) {
+    .top-nav-contact{
+        padding-right: 0px;
+        text-align: center;
+    }
+    .top-nav-contact a{
+        display: block;
+    }
+    .navbar-brand img{
+        top: 0;
+        left: 10px;
+    }
+    .nav-container{
+        top: 104px;
+    }
+    .moveUp{
+        top: 0px;
+    }
+    .banner-content{
+        position: relative;
+        top: 55%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .banner-content h1{
+        font-size: 40px;
+    }
+    .about-us{
+        background-position: top left;
+    }
+    .about-img-container {
+        margin-top: 0rem;
+    }
+    .about-content h4{
+        margin-top: 3rem;
+    }
+    .about-content h3{
+        font-size: 27px;
+    }
+    .recipes-left{
+        margin: 0px;
+    }
+    .delightful-img-container{
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+    .overlay-1{
+        width: 70%;
+        margin-left: 3rem;
+    }
+    .delicious-img img{
+        transform: scale(1)
+    }
+    .delicious-content{
+        transform: translateX(0)
+    }
+    .delicious-content span{
+        display: none;
+    }
+    .delicious-content-2{
+        transform: translateX(0)
+    }
+    .delicious-content-2 span{
+        display: none;
+    }
+    .app-text{
+        top: 0;
+    }
+    .app-text h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .app-text span{
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .app-btn a img{
+        margin-bottom: 10px;
+    }
+    .footer-widget{
+        background-position: center;
+        padding-bottom: 0;
+    }
+    .footer-widget-container{
+        margin-bottom: 5rem;
+    }
+    .footer-content{
+        margin-top: 1rem;
+    }
+    .footer-social-icon{
+        margin-top: 1rem;
+    }
+  }

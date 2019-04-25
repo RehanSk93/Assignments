@@ -1,0 +1,840 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Common Class-------------------------------- */
+
+.container{
+    max-width: 1015px;
+}
+.active{
+    color: #E84C3D !important;
+}
+.margin-top{
+    margin-top: 50px;
+}
+
+/* Navigation section ------------------------- */
+.custom-nav{
+    background: #44494C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.custom-nav-link{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.custom-nav-link:hover{
+    color: #E84C3D;
+}
+.social-icon-list ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.social-icon-list ul li{
+    display: inline;
+    padding: 7px;
+}
+.social-icon-list ul li a i{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+}
+.dropdown-menu > li a{
+    color: #ffffff;
+    line-height: 35px;
+    transition: 0.5s;
+    border-bottom: 1px solid #000000;
+}
+.dropdown-menu{
+    background: #000000b9;
+    border-radius: 0px;
+    padding-bottom: 0;
+}
+
+
+/* header-text section ------------------- */
+.header-bar{
+    background: #ffffff;
+    width: 100%;
+    height: 100px;
+}
+.header-left a{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 26px;
+    line-height: 100px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.header-left a span{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+.header-right ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.header-right ul li{
+    display: inline-block;
+    margin-top: 1.8rem;
+    margin-right: 2rem;
+}
+.header-right ul li{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.header-right ul li strong{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* banner section ---------------------- */
+.banner{
+    background: url('../images/demo/backgrounds/01.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding-top: 7rem;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #31313186;
+}
+.banner-text h2{
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.banner-text p{
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+.custom-btn{
+    padding: 15px 25px;
+    border-radius: 0px;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.btn-1{
+    background: #E84C3D;
+    color: #ffffff;
+}
+.btn-2{
+    background: #ffffff;
+    color: #E84C3D;
+}
+
+
+
+/* Dictum section ---------------------------------- */
+.Dictum{
+    background: #ffffff;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+.dictum-side-space{
+    padding-left: 3rem;
+    padding-right: 3rem; 
+}
+.Dictum p a{
+    color: #E84C3D;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+.Dictum p{
+    margin-bottom: 0;
+}
+.Dictum h2{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.dictum-icon-container{
+    margin-top: 3rem;
+    padding: 10px 20px;
+}
+.inner-icon{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #57565694;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px auto;
+    transition: 0.5s;
+}
+.inner-icon:hover{
+    background: #000000;
+}
+.inner-icon:hover i{
+    color: #ffffff;
+}
+.inner-icon i{
+    color: #000000;
+    font-size: 36px;
+    line-height: 100px;
+    transition: 2s;
+
+}
+.inner-text{
+    text-align: center;
+}
+.inner-text h4 a{
+    color: #E84C3D;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.inner-text h4{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.inner-text p{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+
+
+/* Nullam section ------------------------------------- */
+.Nullam{
+    background: url('../images/demo/backgrounds/02.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.nullam-left{
+    background: #F3F3F3;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.nullam-left p a{
+    color: #E84C3D;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.nullam-left p{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.nullam-left h2{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 39px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+.nullam-img{
+    margin-top: 3rem;
+    padding: 0 4rem; 
+}
+.nullam-img ul{
+    list-style-type: none;
+}
+.nullam-img ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+.nullam-img ul li:hover{
+    opacity: 1;
+}
+
+
+/* Rutrum section --------------------------- */
+.Rutrum{
+    background: url('../images/demo/backgrounds/01.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.Rutrum-title p a{
+    color: #E84C3D;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.Rutrum-title p{
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.Rutrum-title h2{
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 39px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+.rutrum-container{
+    margin-top: 3rem;
+}
+.media-body strong{
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+}
+.media-body em{
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+}
+.media-body-text{
+    position: relative;
+    margin-top: 3rem;
+}
+.media-body-text i{
+    color: #ffffff;
+    opacity: 0.3;
+    font-size: 65px;
+    position: absolute;
+    left: 0;
+    top: -35px;
+}
+.media-body-text p{
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+
+
+/* Vulputate section ------------------------------ */
+.Vulputate{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #ffffff;
+}
+.vulputate-title h6{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2.7rem;
+}
+.vulputate-left{
+    margin-top: 1rem;
+}
+.vulputate-left article{
+    margin-bottom: 2rem;
+}
+.vulputate-left article h4 a{
+    color: #E84C3D;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.vulputate-left article span{
+    margin-top: 0;
+    color: #333335;
+    font-size: 14px;
+    font-weight: 400;
+}
+.vulputate-right{
+    margin-top: 1rem;
+}
+.vulputate-right p{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.contact-form-fild{
+    margin-top: 2rem;
+}
+.custom-form-control{
+    border-radius: 0px;
+}
+.custom-form-control::placeholder{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.btn-custom{
+    background: #E84C3D;
+    color: #ffffff;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0px;
+    letter-spacing: 0.5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+
+/* footer section ----------------------------- */
+.footer{
+    background: #44494C;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.footer-title h6{
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+.footer-body-1 p{
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.footer-body-2 i{
+    color: #b0b0b0;
+    font-size: 16px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.media-body address{
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.custom-border-bottom{
+    border-bottom: 1px solid #333335;
+    margin-bottom: 20px;
+}
+.footer-body-3 ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-body-3 ul li{
+    line-height: 48px;
+    border-bottom: 1px solid #333335;
+}
+.footer-body-3 ul li a{
+    color: #E84C3D;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.footer-body-4 h2 a{
+    text-decoration: none;
+    color: #E84C3D;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer-body-4 time{
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.footer-body-4 p{
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top: 6px;
+}
+
+
+/* Copyright section -------------------------- */
+.Copyright{
+    background: #333335;
+    padding-top: 1rem;
+    padding-bottom: .2rem;
+}
+.Copyright p{
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.Copyright a{
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+}
+.Copyright a:hover{
+    color: #b0b0b0;
+}
+.copyright-text-right{
+    text-align: right;
+}
+
+
+
+
+/* gallery page section start *********************************************/
+
+/* breadcrumb ---------------*/
+.breadcrumb{
+    margin-bottom: 0rem !important;
+    border-radius: 0;
+    padding: 1.5rem 0rem .5rem;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    content: '';
+    padding-left: 0;
+}
+.breadcrumb-item a{
+    color: #888888;
+    font-size: 12px;
+    font-weight: 400;
+}
+.breadcrumb-item i{
+    content: '';
+    font-size: 10px;
+    padding-left: 5px;
+    color: #888888;
+}
+
+
+
+
+/* image gallery section ------------------ */
+.gallery{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.gallery-title h2{
+    color: #333335;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+}
+.gallery-description{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+/* pagination ------------ */
+.pagination{
+    margin-bottom: 3rem;
+}
+.page-item.active .page-link{
+    background: #E84C3D;
+    border-color: #E84C3D;
+}
+.page-link{
+    color: #E84C3D;
+    margin-right: 10px;
+}
+.page-link i{
+    font-size: 12px;
+}
+.page-link:hover{
+    color: #E84C3D;
+    background: #ffffff;
+}
+
+
+
+
+/* full width page start ------------------------------- */
+.fullWidth{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.fullwidth-content{
+    padding-bottom: 2rem;
+}
+.fullwidth-content h1{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.fullwidth-content img.img-1{
+    float: right;
+    margin: 0rem 1rem 1rem;
+}
+.fullwidth-content img.img-2{
+    float: left;
+    margin: 1rem 1rem 1rem 0rem;
+}
+.fullwidth-content p{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.fullwidth-content p a{
+    text-decoration: none;
+    color: #E84C3D;
+}
+.tables{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.tabl a{
+    text-decoration: none;
+    color: #E84C3D;
+}
+.comments h2{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.comments article{
+    background: #fbfbfb;
+    margin-bottom: 10px;
+}
+.media-body p{
+    margin-top: 20px;
+}
+.first-chile{
+    color: #000000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0px !important;
+}
+.media-body time{
+    color: #333335;
+    font-size: 12px;
+    font-weight: 400;
+}
+.contact-us h2{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.form-group span{
+    color: #E84C3D;
+    font-size: 18px;
+    font: 900;
+}
+.custom-form-ctrl{
+    border-radius: 0px;
+}
+.custom-form-ctrl:focus{
+    box-shadow: none;
+    border: 1px solid #E84C3D;
+}
+.custom-btn-1{
+    margin-right: 20px;
+    color: #202020;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.custom-btn-1:focus{
+    box-shadow: none;
+    border: 1px solid #E84C3D;
+}
+
+
+
+/* left-side-bar page start ----------------- */
+.side-bar-one h6{
+    color: #333335;
+    font-size: 22px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.side-bar-list ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.side-bar-list a{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 7px 10px 7px 15px;
+    text-decoration: none;
+    border: solid;
+    border-width: 0 0 1px 0;
+}
+.side-bar-list ul li a{
+    color: #333335;
+    font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+.side-bar-list ul li i{
+    font-size: 8px;
+    float: left;
+    margin-top: 12px;
+}
+.side-bar-two h6{
+    color: #333335;
+    font-size: 22px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.side-bar-two address{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 400;   
+}
+.side-bar-two address a{
+    text-decoration: none;
+    color: #E84C3D;
+}
+.side-bar-three h6{
+    color: #333335;
+    font-size: 22px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.side-bar-three article p{
+    color: #333335;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: 400;  
+}
+.side-bar-three article a{
+    text-decoration: none;
+    color: #E84C3D;  
+}
+
+
+
+/* basic grid system page start --------------------- */
+.basic-grid-title h2{
+    color: #333335;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.grid-content-one{
+    background: #CCCCCC;
+    border-radius: 0px;
+    padding: 7px 20px; 
+}
+.grid-content-two{
+    background: #979797;
+    border-radius: 0px;
+    padding: 7px 20px; 
+}
