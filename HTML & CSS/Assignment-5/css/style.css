@@ -373,8 +373,10 @@ body{
     letter-spacing: 1px;
     font-weight: 300;
 }
-.contact-hading span{
-    display: block;
+
+.contact-hading{
+    max-width: 70%;
+    margin: 0px auto;
 }
 .contact-row{
     margin-top: 5rem;
