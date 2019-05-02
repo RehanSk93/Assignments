@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,700i');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* common class -------------------------------------- */
+hr{
+    opacity: 0.2;
+    background: #ffffff;
+    height: 1px;
+}
+.title-heading{
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+}
+.title-heading h2{
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.title-heading img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+.title-heading p{
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 7rem;
+}
+
+/* navigation section -------------------------------- */
+.navigation{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.navbar{
+    padding-left: 0;
+    padding-right: 0;
+}
+.custom-nav{
+    background: transparent;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.navbar-toggler-icon i{
+    font-size: 40px;
+    line-height: 35px;
+    color: #ffffff;
+}
+.navbar-brand{
+    margin-right: 2rem;
+}
+.container {
+    max-width: 1355px;
+}
+.brand-heading{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.brand-sub{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    background: #000000;
+    padding-left: 30px;
+    opacity: 0.9;
+}
+.navbar-nav img{
+    height: 25px;
+    width: 25px;
+}
+.navbar-nav a{
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    transition: 0.5s;
+    color: #ffffff;
+}
+.navbar-nav a:hover{
+    padding-left: 10px;
+}
+.nav-right-container a i{
+    font-size: 32px;
+    line-height: 85px;
+    color: #ffffff;
+    padding: 0px 28px;
+}
+
+
+
+/* banner section ----------------------------- */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 820px;
+}
+.hero-background{
+    background: url('../img/hero_background.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+}
+.hero-gradient{
+    background: url('../img/hero_gradient.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: Gradient 50s ease infinite;
+}
+.hero-pattern{
+    background: url('../img/hero_pattern.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-attachment: fixed;
+}
+.hero-content{
+    background: url('../img/hero_pattern.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+.banner-text{
+    position: relative;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    z-index: 90;
+}
+.banner-heading h2{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 78px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.banner-heading h3{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.banner-earth img{
+    height: 230px;
+    width: 230px;
+}
+.banner-text-two{
+    width: 80%;
+    margin: 0px auto;
+}
+.banner-text-two p{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 300;
+    margin-top: 3rem;
+}
+.banner-text-two p a{
+    color: #ffffff;
+}
+.banner-btn{
+    margin-top: 4rem;
+}
+.custom-btn-one{
+    padding: 12px 60px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    margin-right: 7rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.custom-btn-one:hover{
+    background: #ffffff;
+    color: #000000;
+    border: 3px solid #fff;
+}
+.custom-btn-two{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.custom-btn-two:hover{
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+
+
+/* mySkill-top section ------------------------- */
+.mySkill-top{
+    background-image: url('../img/content_hollow-arrow.png');
+    width: 100%;
+    height: 40px;
+    background-position: 50% 50%;
+    position: relative;
+    top: -40px;
+    left: 0;
+    opacity: 1;
+    z-index: 99;
+}
+.mySkill{
+    background-image: linear-gradient(to bottom right, #360033, #0b8793);
+    background-size: cover;
+    width: 100%;
+    min-height: 750px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 7rem;
+}
+.myskill-position{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.layer-one{
+    background: url('../img/hero_pattern.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.myskill-img img{
+    width: 100%;
+    height: 120px;
+}
+.skill-text p{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+
+/* features section -------------------------- */
+.myfeatures{
+    background-image: linear-gradient(to bottom left, #354b15, #1b5752 2100px);
+    background-size: cover;
+    width: 100%;
+    min-height: 750px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 7rem;
+}
+.features-container{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.features-container .media img{
+    height: 100%;
+    max-width: 100px;
+    margin-right: 2rem;
+}
+.features-container .media-body h2{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    line-height: .4;
+}
+.features-container .media-body p{
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+
+/* Portfolio section ----------------------------------- */
+.Portfolio{
+    background-image: linear-gradient(to bottom left, #3a6073, #16222a);
+    background-size: cover;
+    width: 100%;
+    min-height: 750px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 7rem;
+}
+.nav-item{
+    margin-right: 3rem;
+}
+.nav-item img{
+    width: 190px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 25%
+    }
+    25% {
+		background-position: 25% 50%
+	}
+	50% {
+		background-position: 50% 75%
+    }
+    75% {
+		background-position: 75% 100%
+	}
+	100% {
+		background-position: 100% 0%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 25%
+    }
+    25% {
+		background-position: 25% 50%
+	}
+	50% {
+		background-position: 50% 75%
+    }
+    75% {
+		background-position: 75% 100%
+	}
+	100% {
+		background-position: 100% 0%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 25%
+    }
+    25% {
+		background-position: 25% 50%
+	}
+	50% {
+		background-position: 50% 75%
+    }
+    75% {
+		background-position: 75% 100%
+	}
+	100% {
+		background-position: 100% 0%
+	}
+}

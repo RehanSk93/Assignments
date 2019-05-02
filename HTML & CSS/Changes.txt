@@ -1,0 +1,28 @@
+Assignment -1 
+1. Images is not responsive in carousel
+2. Menu style is different for small device in actual assignment.
+
+Assignment -2 
+1. My Experience section is not responsive on mobile device.
+2. Social icon hover effect mismatch.
+
+Assignment - 4
+1. Menu style is different for small device in actual assignment.
+2. Service Page is not working 
+3. Our Address section - location icon misplaced.
+
+Assignment - 6
+1. FAQ Section - Panel Open and close is not working properly
+2. (+ / -) Icon is missing.
+
+Assignment - 7
+1. Price Section - after click then rotate price card 
+
+Assignment - 8
+1. Portfolio section - Pop up Images after click is missing
+
+Assignment - 9 
+1. Menu style is different for small device in actual assignment.
+
+Assignment - 10, 13, 14, 15
+1. This entire assignment is pending I will show you my next code review session.
