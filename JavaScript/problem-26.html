@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem-15</title>
+</head>
+
+<body>
+    <script>
+        function localDay(date) {
+
+            let day = date.getDay()
+            debugger
+            if (day == 0) {
+                day = 7;
+            }
+            return day;
+        }
+        let date = new Date(2012, 0, 3);
+        console.log(date.toDateString());// The toDateString() method converts the date not the time
+        console.log(localDay(date));
+    </script>
+</body>
+
+</html>
