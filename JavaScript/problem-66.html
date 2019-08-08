@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem-15</title>
+</head>
+
+<body>
+    <script>
+        
+        function printNumbers(from, to) {
+    
+    let current = from;
+    let timerId = setInterval(function() {
+      alert(current);
+      if (current == to) {
+          debugger
+        clearInterval(timerId);
+      }
+      current++;
+    }, 1000);
+  }
+  printNumbers(5, 10);
+  </script>
+  
+  <!-- <script>
+  function printNumbers(from, to) {
+    let current = from;
+    setTimeout(function go() {
+      alert(current);
+      if (current < to) {
+        setTimeout(go, 1000);
+      }
+      current++;
+    }, 1000);
+  }
+  // usage:
+  printNumbers(5, 10);
+  </script> -->
+</body>
+
+</html>

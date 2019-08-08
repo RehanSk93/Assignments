@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem-15</title>
+</head>
+
+<body>
+    <script>
+        let company={
+    sales:[{
+        name:'john',
+        salary:1000
+    }],
+    development:{
+        sites:[{
+            name:'peter',
+            salary:2000
+        },
+        {
+        name:'alex',
+        salary:1800
+        }],
+      internal:[{
+          name:'jack',
+          salary:1300
+      }]  
+    }
+};
+function sumSalaries(obj) {
+    
+			if (Array.isArray(obj)) {  
+				return obj.reduce((pre, current) => pre + current.salary, 0);	
+			}else{
+                
+				let sum = 0;
+				for (let subcat of Object.values(obj)) {
+		
+					sum += sumSalaries(subcat);
+				}
+				return sum;
+			}
+		}
+		alert(sumSalaries(company));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem-15</title>
+</head>
+
+<body>
+    <script>
+        function sumInput() {
+let numbers = [];
+while (true) {
+  let value = prompt("Please Enter the Number", 0);
+if (value === "" || isNaN(value)) break;
+  numbers.push(+value);
+}
+let sum = 0;
+for (let number of numbers) {
+  sum += number;
+}
+return sum;
+}
+console.log( sumInput() );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem-15</title>
+</head>
+
+<body>
+    <script>
+        function getSecondLargest(nums){
+    // return nums.sort().reverse();|
+    let unique = Array.from(new Set(nums)); // Array.from that method creates a new copy of array
+    let vishnu=unique.sort().reverse()[1];
+    return vishnu;
+}
+let value=[2,3,6,6,5];
+console.log(getSecondLargest(value));
+    </script>
+</body>
+
+</html>
